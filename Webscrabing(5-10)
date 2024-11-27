@@ -1,0 +1,872 @@
+#JKSRTC
+
+#JKSRTC
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.common.keys import Keys
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import NoSuchElementException, TimeoutException, ElementNotInteractableException
+import time
+import pandas as pd
+
+# Initialize WebDriver
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+driver.maximize_window()
+
+# Open the desired webpage
+driver.get("https://www.redbus.in/online-booking/jksrtc")
+time.sleep(3)  # Allow time for the page to load
+
+
+# Function to retrieve bus route links and route names
+def link_route(path):
+    LINKS = []
+    ROUTE = []
+    wait = WebDriverWait(driver, 10)
+
+    while True:
+        try:
+            paths = driver.find_elements(By.XPATH, path)
+            for links in paths:
+                d = links.get_attribute("href")
+                if d:
+                    LINKS.append(d)
+            for route in paths:
+                ROUTE.append(route.text)
+            
+            # Handle pagination
+            try:
+                active_page_element = driver.find_element(By.XPATH, "//div[@class='DC_117_pageTabs DC_117_pageActive']")
+                active_page_number = active_page_element.text
+                next_page_number = str(int(active_page_number) + 1)
+                next_page_button_xpath = f"//div[@class='DC_117_paginationTable']//div[text()='{next_page_number}']"
+                next_page_button = wait.until(EC.presence_of_element_located((By.XPATH, next_page_button_xpath)))
+                driver.execute_script("arguments[0].scrollIntoView(true);", next_page_button)
+                time.sleep(1)
+                next_page_button.click()
+                print(f"Navigating to page {next_page_number}")
+                time.sleep(10)
+            except (NoSuchElementException, TimeoutException):
+                print("No more pages to paginate or pagination element not found")
+                break
+        except Exception as e:
+            print(f"Error occurred: {str(e)}")
+            break
+
+    return LINKS, ROUTE
+
+
+# Retrieve route links and names
+LINKS, ROUTE = link_route("//a[@class='route']")
+
+# Save route data
+df_routes = pd.DataFrame({"Route_name": ROUTE, "Route_link": LINKS})
+df_routes.to_csv("JKSRTC.csv", index=False)
+print("Route details saved successfully.")
+
+# Close the first driver
+driver.quit()
+
+
+# Initialize second WebDriver for bus details
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+driver.maximize_window()
+
+Bus_names = []
+Bus_types = []
+Departure = []
+Arrival = []
+Ratings = []
+Total_Duration = []
+Prices = []
+Seats_Available = []
+Route_names = []
+Route_links = []
+
+# Loop through route links to extract bus details
+for i, r in df_routes.iterrows():
+    link = r["Route_link"]
+    routes = r["Route_name"]
+    driver.get(link)
+    time.sleep(2)
+
+    try:
+        view_buses_button = driver.find_element(By.XPATH, "//div[@class='button']")
+        view_buses_button.click()
+    except:
+        continue
+    time.sleep(2)
+
+    scrolling = True
+    while scrolling:
+        old_page_source = driver.page_source
+        ActionChains(driver).send_keys(Keys.PAGE_DOWN).perform()
+        time.sleep(5)
+        new_page_source = driver.page_source
+        if new_page_source == old_page_source:
+            scrolling = False
+
+    # Extract bus details
+    bus_name = driver.find_elements(By.XPATH, "//div[@class='travels lh-24 f-bold d-color']")
+    bus_type = driver.find_elements(By.XPATH, "//div[@class='bus-type f-12 m-top-16 l-color evBus']")
+    start_time = driver.find_elements(By.XPATH, "//*[@class='dp-time f-19 d-color f-bold']")
+    end_time = driver.find_elements(By.XPATH, "//*[@class='bp-time f-19 d-color disp-Inline']")
+    total_duration = driver.find_elements(By.XPATH, "//*[@class='dur l-color lh-24']")
+    price = driver.find_elements(By.XPATH, '//div[@class="fare d-block"]//span')
+    seats = driver.find_elements(By.XPATH, "//div[contains(@class, 'seat-left')]")
+    try:
+        rating = driver.find_elements(By.XPATH, "//div[@class='clearfix row-one']/div[@class='column-six p-right-10 w-10 fl']")
+    except:
+        rating = []
+
+    # Append data to lists
+    for bus in bus_name:
+        Bus_names.append(bus.text)
+        Route_links.append(link)
+        Route_names.append(routes)
+    for bus_type_elem in bus_type:
+        Bus_types.append(bus_type_elem.text)
+    for start_time_elem in start_time:
+        Departure.append(start_time_elem.text)
+    for end_time_elem in end_time:
+        Arrival.append(end_time_elem.text)
+    for total_duration_elem in total_duration:
+        Total_Duration.append(total_duration_elem.text)
+    for ratings_elem in rating:
+        Ratings.append(ratings_elem.text if ratings_elem else "N/A")
+    for price_elem in price:
+        Prices.append(price_elem.text)
+    for seats_elem in seats:
+        Seats_Available.append(seats_elem.text)
+
+print("Bus details extracted successfully.")
+
+# Save bus data
+data = {
+    'Route_name': Route_names,
+    'Route_link': Route_links,
+    'Bus_name': Bus_names,
+    'Bus_type': Bus_types,
+    'Departing_time': Departure,
+    'Total_duration': Total_Duration,
+    'Reaching_time': Arrival,
+    'Star_Rating': Ratings,
+    'Price': Prices,
+    'Seats_Available': Seats_Available
+    
+    
+}
+df_buses = pd.DataFrame(data)
+df_buses.to_csv("redbus5_details.csv", index=False)
+print("Bus details saved successfully.")
+
+# Close the WebDriver
+driver.quit()
+
+No more pages to paginate or pagination element not found
+Route details saved successfully.
+Bus details extracted successfully.
+Bus details saved successfully.
+
+#SBSTC
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.common.keys import Keys
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import NoSuchElementException, TimeoutException, ElementNotInteractableException
+import time
+import pandas as pd
+
+# Initialize WebDriver
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+driver.maximize_window()
+
+# Open the desired webpage
+driver.get("https://www.redbus.in/online-booking/south-bengal-state-transport-corporation-sbstc/?utm_source=rtchometile")
+time.sleep(3)  # Allow time for the page to load
+
+
+# Function to retrieve bus route links and route names
+def link_route(path):
+    LINKS = []
+    ROUTE = []
+    wait = WebDriverWait(driver, 10)
+
+    while True:
+        try:
+            paths = driver.find_elements(By.XPATH, path)
+            for links in paths:
+                d = links.get_attribute("href")
+                if d:
+                    LINKS.append(d)
+            for route in paths:
+                ROUTE.append(route.text)
+            
+            # Handle pagination
+            try:
+                active_page_element = driver.find_element(By.XPATH, "//div[@class='DC_117_pageTabs DC_117_pageActive']")
+                active_page_number = active_page_element.text
+                next_page_number = str(int(active_page_number) + 1)
+                next_page_button_xpath = f"//div[@class='DC_117_paginationTable']//div[text()='{next_page_number}']"
+                next_page_button = wait.until(EC.presence_of_element_located((By.XPATH, next_page_button_xpath)))
+                driver.execute_script("arguments[0].scrollIntoView(true);", next_page_button)
+                time.sleep(1)
+                next_page_button.click()
+                print(f"Navigating to page {next_page_number}")
+                time.sleep(10)
+            except (NoSuchElementException, TimeoutException):
+                print("No more pages to paginate or pagination element not found")
+                break
+        except Exception as e:
+            print(f"Error occurred: {str(e)}")
+            break
+
+    return LINKS, ROUTE
+
+
+# Retrieve route links and names
+LINKS, ROUTE = link_route("//a[@class='route']")
+
+# Save route data
+df_routes = pd.DataFrame({"Route_name": ROUTE, "Route_link": LINKS})
+df_routes.to_csv("SBSTC.csv", index=False)
+print("Route details saved successfully.")
+
+# Close the first driver
+driver.quit()
+
+
+# Initialize second WebDriver for bus details
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+driver.maximize_window()
+
+Bus_names = []
+Bus_types = []
+Departure = []
+Arrival = []
+Ratings = []
+Total_Duration = []
+Prices = []
+Seats_Available = []
+Route_names = []
+Route_links = []
+
+# Loop through route links to extract bus details
+for i, r in df_routes.iterrows():
+    link = r["Route_link"]
+    routes = r["Route_name"]
+    driver.get(link)
+    time.sleep(2)
+
+    try:
+        view_buses_button = driver.find_element(By.XPATH, "//div[@class='button']")
+        view_buses_button.click()
+    except:
+        continue
+    time.sleep(2)
+
+    scrolling = True
+    while scrolling:
+        old_page_source = driver.page_source
+        ActionChains(driver).send_keys(Keys.PAGE_DOWN).perform()
+        time.sleep(5)
+        new_page_source = driver.page_source
+        if new_page_source == old_page_source:
+            scrolling = False
+
+    # Extract bus details
+    bus_name = driver.find_elements(By.XPATH, "//div[@class='travels lh-24 f-bold d-color']")
+    bus_type = driver.find_elements(By.XPATH, "//div[@class='bus-type f-12 m-top-16 l-color evBus']")
+    start_time = driver.find_elements(By.XPATH, "//*[@class='dp-time f-19 d-color f-bold']")
+    end_time = driver.find_elements(By.XPATH, "//*[@class='bp-time f-19 d-color disp-Inline']")
+    total_duration = driver.find_elements(By.XPATH, "//*[@class='dur l-color lh-24']")
+    price = driver.find_elements(By.XPATH, '//div[@class="fare d-block"]//span')
+    seats = driver.find_elements(By.XPATH, "//div[contains(@class, 'seat-left')]")
+    try:
+        rating = driver.find_elements(By.XPATH, "//div[@class='clearfix row-one']/div[@class='column-six p-right-10 w-10 fl']")
+    except:
+        rating = []
+
+    # Append data to lists
+    for bus in bus_name:
+        Bus_names.append(bus.text)
+        Route_links.append(link)
+        Route_names.append(routes)
+    for bus_type_elem in bus_type:
+        Bus_types.append(bus_type_elem.text)
+    for start_time_elem in start_time:
+        Departure.append(start_time_elem.text)
+    for end_time_elem in end_time:
+        Arrival.append(end_time_elem.text)
+    for total_duration_elem in total_duration:
+        Total_Duration.append(total_duration_elem.text)
+    for ratings_elem in rating:
+        Ratings.append(ratings_elem.text if ratings_elem else "N/A")
+    for price_elem in price:
+        Prices.append(price_elem.text)
+    for seats_elem in seats:
+        Seats_Available.append(seats_elem.text)
+
+print("Bus details extracted successfully.")
+
+# Save bus data
+data = {
+    'Route_name': Route_names,
+    'Route_link': Route_links,
+    'Bus_name': Bus_names,
+    'Bus_type': Bus_types,
+    'Departing_time': Departure,
+    'Total_duration': Total_Duration,
+    'Reaching_time': Arrival,
+    'Star_Rating': Ratings,
+    'Price': Prices,
+    'Seats_Available': Seats_Available
+    
+    
+}
+df_buses = pd.DataFrame(data)
+df_buses.to_csv("redbus6_details.csv", index=False)
+print("Bus details saved successfully.")
+
+# Close the WebDriver
+driver.quit()
+
+Navigating to page 2
+Navigating to page 3
+Navigating to page 4
+Navigating to page 5
+No more pages to paginate or pagination element not found
+Route details saved successfully.
+Bus details extracted successfully.
+Bus details saved successfully.
+
+#WBTC(CTC)
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.common.keys import Keys
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import NoSuchElementException, TimeoutException, ElementNotInteractableException
+import time
+import pandas as pd
+
+# Initialize WebDriver
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+driver.maximize_window()
+
+# Open the desired webpage
+driver.get("https://www.redbus.in/online-booking/wbtc-ctc/?utm_source=rtchometile")
+time.sleep(3)  # Allow time for the page to load
+
+
+# Function to retrieve bus route links and route names
+def link_route(path):
+    LINKS = []
+    ROUTE = []
+    wait = WebDriverWait(driver, 10)
+
+    while True:
+        try:
+            paths = driver.find_elements(By.XPATH, path)
+            for links in paths:
+                d = links.get_attribute("href")
+                if d:
+                    LINKS.append(d)
+            for route in paths:
+                ROUTE.append(route.text)
+            
+            # Handle pagination
+            try:
+                active_page_element = driver.find_element(By.XPATH, "//div[@class='DC_117_pageTabs DC_117_pageActive']")
+                active_page_number = active_page_element.text
+                next_page_number = str(int(active_page_number) + 1)
+                next_page_button_xpath = f"//div[@class='DC_117_paginationTable']//div[text()='{next_page_number}']"
+                next_page_button = wait.until(EC.presence_of_element_located((By.XPATH, next_page_button_xpath)))
+                driver.execute_script("arguments[0].scrollIntoView(true);", next_page_button)
+                time.sleep(1)
+                next_page_button.click()
+                print(f"Navigating to page {next_page_number}")
+                time.sleep(10)
+            except (NoSuchElementException, TimeoutException):
+                print("No more pages to paginate or pagination element not found")
+                break
+        except Exception as e:
+            print(f"Error occurred: {str(e)}")
+            break
+
+    return LINKS, ROUTE
+
+
+# Retrieve route links and names
+LINKS, ROUTE = link_route("//a[@class='route']")
+
+# Save route data
+df_routes = pd.DataFrame({"Route_name": ROUTE, "Route_link": LINKS})
+df_routes.to_csv("WBTC.csv", index=False)
+print("Route details saved successfully.")
+
+# Close the first driver
+driver.quit()
+
+
+# Initialize second WebDriver for bus details
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+driver.maximize_window()
+
+Bus_names = []
+Bus_types = []
+Departure = []
+Arrival = []
+Ratings = []
+Total_Duration = []
+Prices = []
+Seats_Available = []
+Route_names = []
+Route_links = []
+
+# Loop through route links to extract bus details
+for i, r in df_routes.iterrows():
+    link = r["Route_link"]
+    routes = r["Route_name"]
+    driver.get(link)
+    time.sleep(2)
+
+    try:
+        view_buses_button = driver.find_element(By.XPATH, "//div[@class='button']")
+        view_buses_button.click()
+    except:
+        continue
+    time.sleep(2)
+
+    scrolling = True
+    while scrolling:
+        old_page_source = driver.page_source
+        ActionChains(driver).send_keys(Keys.PAGE_DOWN).perform()
+        time.sleep(5)
+        new_page_source = driver.page_source
+        if new_page_source == old_page_source:
+            scrolling = False
+
+    # Extract bus details
+    bus_name = driver.find_elements(By.XPATH, "//div[@class='travels lh-24 f-bold d-color']")
+    bus_type = driver.find_elements(By.XPATH, "//div[@class='bus-type f-12 m-top-16 l-color evBus']")
+    start_time = driver.find_elements(By.XPATH, "//*[@class='dp-time f-19 d-color f-bold']")
+    end_time = driver.find_elements(By.XPATH, "//*[@class='bp-time f-19 d-color disp-Inline']")
+    total_duration = driver.find_elements(By.XPATH, "//*[@class='dur l-color lh-24']")
+    price = driver.find_elements(By.XPATH, '//div[@class="fare d-block"]//span')
+    seats = driver.find_elements(By.XPATH, "//div[contains(@class, 'seat-left')]")
+    try:
+        rating = driver.find_elements(By.XPATH, "//div[@class='clearfix row-one']/div[@class='column-six p-right-10 w-10 fl']")
+    except:
+        rating = []
+
+    # Append data to lists
+    for bus in bus_name:
+        Bus_names.append(bus.text)
+        Route_links.append(link)
+        Route_names.append(routes)
+    for bus_type_elem in bus_type:
+        Bus_types.append(bus_type_elem.text)
+    for start_time_elem in start_time:
+        Departure.append(start_time_elem.text)
+    for end_time_elem in end_time:
+        Arrival.append(end_time_elem.text)
+    for total_duration_elem in total_duration:
+        Total_Duration.append(total_duration_elem.text)
+    for ratings_elem in rating:
+        Ratings.append(ratings_elem.text if ratings_elem else "N/A")
+    for price_elem in price:
+        Prices.append(price_elem.text)
+    for seats_elem in seats:
+        Seats_Available.append(seats_elem.text)
+
+print("Bus details extracted successfully.")
+
+# Save bus data
+data = {
+    'Route_name': Route_names,
+    'Route_link': Route_links,
+    'Bus_name': Bus_names,
+    'Bus_type': Bus_types,
+    'Departing_time': Departure,
+    'Total_duration': Total_Duration,
+    'Reaching_time': Arrival,
+    'Star_Rating': Ratings,
+    'Price': Prices,
+    'Seats_Available': Seats_Available
+    
+    
+}
+df_buses = pd.DataFrame(data)
+df_buses.to_csv("redbus7_details.csv", index=False)
+print("Bus details saved successfully.")
+
+# Close the WebDriver
+driver.quit()
+
+Navigating to page 2
+Navigating to page 3
+Navigating to page 4
+No more pages to paginate or pagination element not found
+Route details saved successfully.
+Bus details extracted successfully.
+Bus details saved successfully.
+
+#PEPSU
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.common.keys import Keys
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import NoSuchElementException, TimeoutException, ElementNotInteractableException
+import time
+import pandas as pd
+
+# Initialize WebDriver
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+driver.maximize_window()
+
+# Open the desired webpage
+driver.get("https://www.redbus.in/online-booking/pepsu/?utm_source=rtchometile")
+time.sleep(3)  # Allow time for the page to load
+
+
+# Function to retrieve bus route links and route names
+def link_route(path):
+    LINKS = []
+    ROUTE = []
+    wait = WebDriverWait(driver, 10)
+
+    while True:
+        try:
+            paths = driver.find_elements(By.XPATH, path)
+            for links in paths:
+                d = links.get_attribute("href")
+                if d:
+                    LINKS.append(d)
+            for route in paths:
+                ROUTE.append(route.text)
+            
+            # Handle pagination
+            try:
+                active_page_element = driver.find_element(By.XPATH, "//div[@class='DC_117_pageTabs DC_117_pageActive']")
+                active_page_number = active_page_element.text
+                next_page_number = str(int(active_page_number) + 1)
+                next_page_button_xpath = f"//div[@class='DC_117_paginationTable']//div[text()='{next_page_number}']"
+                next_page_button = wait.until(EC.presence_of_element_located((By.XPATH, next_page_button_xpath)))
+                driver.execute_script("arguments[0].scrollIntoView(true);", next_page_button)
+                time.sleep(1)
+                next_page_button.click()
+                print(f"Navigating to page {next_page_number}")
+                time.sleep(10)
+            except (NoSuchElementException, TimeoutException):
+                print("No more pages to paginate or pagination element not found")
+                break
+        except Exception as e:
+            print(f"Error occurred: {str(e)}")
+            break
+
+    return LINKS, ROUTE
+
+
+# Retrieve route links and names
+LINKS, ROUTE = link_route("//a[@class='route']")
+
+# Save route data
+df_routes = pd.DataFrame({"Route_name": ROUTE, "Route_link": LINKS})
+df_routes.to_csv("PEPSU.csv", index=False)
+print("Route details saved successfully.")
+
+# Close the first driver
+driver.quit()
+
+
+# Initialize second WebDriver for bus details
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+driver.maximize_window()
+
+Bus_names = []
+Bus_types = []
+Departure = []
+Arrival = []
+Ratings = []
+Total_Duration = []
+Prices = []
+Seats_Available = []
+Route_names = []
+Route_links = []
+
+# Loop through route links to extract bus details
+for i, r in df_routes.iterrows():
+    link = r["Route_link"]
+    routes = r["Route_name"]
+    driver.get(link)
+    time.sleep(2)
+
+    try:
+        view_buses_button = driver.find_element(By.XPATH, "//div[@class='button']")
+        view_buses_button.click()
+    except:
+        continue
+    time.sleep(2)
+
+    scrolling = True
+    while scrolling:
+        old_page_source = driver.page_source
+        ActionChains(driver).send_keys(Keys.PAGE_DOWN).perform()
+        time.sleep(5)
+        new_page_source = driver.page_source
+        if new_page_source == old_page_source:
+            scrolling = False
+
+    # Extract bus details
+    bus_name = driver.find_elements(By.XPATH, "//div[@class='travels lh-24 f-bold d-color']")
+    bus_type = driver.find_elements(By.XPATH, "//div[@class='bus-type f-12 m-top-16 l-color evBus']")
+    start_time = driver.find_elements(By.XPATH, "//*[@class='dp-time f-19 d-color f-bold']")
+    end_time = driver.find_elements(By.XPATH, "//*[@class='bp-time f-19 d-color disp-Inline']")
+    total_duration = driver.find_elements(By.XPATH, "//*[@class='dur l-color lh-24']")
+    price = driver.find_elements(By.XPATH, '//div[@class="fare d-block"]//span')
+    seats = driver.find_elements(By.XPATH, "//div[contains(@class, 'seat-left')]")
+    try:
+        rating = driver.find_elements(By.XPATH, "//div[@class='clearfix row-one']/div[@class='column-six p-right-10 w-10 fl']")
+    except:
+        rating = []
+
+    # Append data to lists
+    for bus in bus_name:
+        Bus_names.append(bus.text)
+        Route_links.append(link)
+        Route_names.append(routes)
+    for bus_type_elem in bus_type:
+        Bus_types.append(bus_type_elem.text)
+    for start_time_elem in start_time:
+        Departure.append(start_time_elem.text)
+    for end_time_elem in end_time:
+        Arrival.append(end_time_elem.text)
+    for total_duration_elem in total_duration:
+        Total_Duration.append(total_duration_elem.text)
+    for ratings_elem in rating:
+        Ratings.append(ratings_elem.text if ratings_elem else "N/A")
+    for price_elem in price:
+        Prices.append(price_elem.text)
+    for seats_elem in seats:
+        Seats_Available.append(seats_elem.text)
+
+print("Bus details extracted successfully.")
+
+# Save bus data
+data = {
+    'Route_name': Route_names,
+    'Route_link': Route_links,
+    'Bus_name': Bus_names,
+    'Bus_type': Bus_types,
+    'Departing_time': Departure,
+    'Total_duration': Total_Duration,
+    'Reaching_time': Arrival,
+    'Star_Rating': Ratings,
+    'Price': Prices,
+    'Seats_Available': Seats_Available
+    
+    
+}
+df_buses = pd.DataFrame(data)
+df_buses.to_csv("redbus8_details.csv", index=False)
+print("Bus details saved successfully.")
+
+# Close the WebDriver
+driver.quit()
+
+Navigating to page 2
+Navigating to page 3
+No more pages to paginate or pagination element not found
+Route details saved successfully.
+Bus details extracted successfully.
+Bus details saved successfully.
+
+#TSRTC
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.common.keys import Keys
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import NoSuchElementException, TimeoutException, ElementNotInteractableException
+import time
+import pandas as pd
+
+# Initialize WebDriver
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+driver.maximize_window()
+
+# Open the desired webpage
+driver.get("https://www.redbus.in/online-booking/tsrtc/?utm_source=rtchometile")
+time.sleep(3)  # Allow time for the page to load
+
+
+# Function to retrieve bus route links and route names
+def link_route(path):
+    LINKS = []
+    ROUTE = []
+    wait = WebDriverWait(driver, 10)
+
+    while True:
+        try:
+            paths = driver.find_elements(By.XPATH, path)
+            for links in paths:
+                d = links.get_attribute("href")
+                if d:
+                    LINKS.append(d)
+            for route in paths:
+                ROUTE.append(route.text)
+            
+            # Handle pagination
+            try:
+                active_page_element = driver.find_element(By.XPATH, "//div[@class='DC_117_pageTabs DC_117_pageActive']")
+                active_page_number = active_page_element.text
+                next_page_number = str(int(active_page_number) + 1)
+                next_page_button_xpath = f"//div[@class='DC_117_paginationTable']//div[text()='{next_page_number}']"
+                next_page_button = wait.until(EC.presence_of_element_located((By.XPATH, next_page_button_xpath)))
+                driver.execute_script("arguments[0].scrollIntoView(true);", next_page_button)
+                time.sleep(1)
+                next_page_button.click()
+                print(f"Navigating to page {next_page_number}")
+                time.sleep(10)
+            except (NoSuchElementException, TimeoutException):
+                print("No more pages to paginate or pagination element not found")
+                break
+        except Exception as e:
+            print(f"Error occurred: {str(e)}")
+            break
+
+    return LINKS, ROUTE
+
+
+# Retrieve route links and names
+LINKS, ROUTE = link_route("//a[@class='route']")
+
+# Save route data
+df_routes = pd.DataFrame({"Route_name": ROUTE, "Route_link": LINKS})
+df_routes.to_csv("TSRTC.csv", index=False)
+print("Route details saved successfully.")
+
+# Close the first driver
+driver.quit()
+
+
+# Initialize second WebDriver for bus details
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+driver.maximize_window()
+
+Bus_names = []
+Bus_types = []
+Departure = []
+Arrival = []
+Ratings = []
+Total_Duration = []
+Prices = []
+Seats_Available = []
+Route_names = []
+Route_links = []
+
+# Loop through route links to extract bus details
+for i, r in df_routes.iterrows():
+    link = r["Route_link"]
+    routes = r["Route_name"]
+    driver.get(link)
+    time.sleep(2)
+
+    try:
+        view_buses_button = driver.find_element(By.XPATH, "//div[@class='button']")
+        view_buses_button.click()
+    except:
+        continue
+    time.sleep(2)
+
+    scrolling = True
+    while scrolling:
+        old_page_source = driver.page_source
+        ActionChains(driver).send_keys(Keys.PAGE_DOWN).perform()
+        time.sleep(5)
+        new_page_source = driver.page_source
+        if new_page_source == old_page_source:
+            scrolling = False
+
+    # Extract bus details
+    bus_name = driver.find_elements(By.XPATH, "//div[@class='travels lh-24 f-bold d-color']")
+    bus_type = driver.find_elements(By.XPATH, "//div[@class='bus-type f-12 m-top-16 l-color evBus']")
+    start_time = driver.find_elements(By.XPATH, "//*[@class='dp-time f-19 d-color f-bold']")
+    end_time = driver.find_elements(By.XPATH, "//*[@class='bp-time f-19 d-color disp-Inline']")
+    total_duration = driver.find_elements(By.XPATH, "//*[@class='dur l-color lh-24']")
+    price = driver.find_elements(By.XPATH, '//div[@class="fare d-block"]//span')
+    seats = driver.find_elements(By.XPATH, "//div[contains(@class, 'seat-left')]")
+    try:
+        rating = driver.find_elements(By.XPATH, "//div[@class='clearfix row-one']/div[@class='column-six p-right-10 w-10 fl']")
+    except:
+        rating = []
+
+    # Append data to lists
+    for bus in bus_name:
+        Bus_names.append(bus.text)
+        Route_links.append(link)
+        Route_names.append(routes)
+    for bus_type_elem in bus_type:
+        Bus_types.append(bus_type_elem.text)
+    for start_time_elem in start_time:
+        Departure.append(start_time_elem.text)
+    for end_time_elem in end_time:
+        Arrival.append(end_time_elem.text)
+    for total_duration_elem in total_duration:
+        Total_Duration.append(total_duration_elem.text)
+    for ratings_elem in rating:
+        Ratings.append(ratings_elem.text if ratings_elem else "N/A")
+    for price_elem in price:
+        Prices.append(price_elem.text)
+    for seats_elem in seats:
+        Seats_Available.append(seats_elem.text)
+
+print("Bus details extracted successfully.")
+
+# Save bus data
+data = {
+    'Route_name': Route_names,
+    'Route_link': Route_links,
+    'Bus_name': Bus_names,
+    'Bus_type': Bus_types,
+    'Departing_time': Departure,
+    'Total_duration': Total_Duration,
+    'Reaching_time': Arrival,
+    'Star_Rating': Ratings,
+    'Price': Prices,
+    'Seats_Available': Seats_Available
+    
+    
+}
+df_buses = pd.DataFrame(data)
+df_buses.to_csv("redbus9_details.csv", index=False)
+print("Bus details saved successfully.")
+
+# Close the WebDriver
+driver.quit()
+
+Navigating to page 2
+Navigating to page 3
+No more pages to paginate or pagination element not found
+Route details saved successfully.
+Bus details extracted successfully.
+Bus details saved successfully.
