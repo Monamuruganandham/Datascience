@@ -1,0 +1,533 @@
+Route_name,Route_link,Bus_name,Bus_type,Departing_time,Total_duration,Reaching_time,Star_Rating,Price,Seats_Available,State
+Khammam to Hyderabad,https://www.redbus.in/bus-tickets/khammam-to-hyderabad,TGSRTC - 64022,Rajdhani (AC Semi Sleeper 2+2),19:00,03h 30m,22:30,"3.1
+20",389,30 Seats available,TELENGANA
+Khammam to Hyderabad,https://www.redbus.in/bus-tickets/khammam-to-hyderabad,TGSRTC - 8677,Super Luxury (Non AC Seater 2+2 Push Back),19:30,04h 10m,23:40,"3.2
+28",320,31 Seats available,TELENGANA
+Khammam to Hyderabad,https://www.redbus.in/bus-tickets/khammam-to-hyderabad,TGSRTC - 8625,RAJDHANI (A.C. Semi Sleeper),21:00,04h 00m,01:00,"3.7
+53",389,35 Seats available,TELENGANA
+Khammam to Hyderabad,https://www.redbus.in/bus-tickets/khammam-to-hyderabad,TGSRTC - 8619,RAJDHANI (A.C. Semi Sleeper),22:00,04h 00m,02:00,"3.7
+72",389,34 Seats available,TELENGANA
+Khammam to Hyderabad,https://www.redbus.in/bus-tickets/khammam-to-hyderabad,TGSRTC - 64593,Super Luxury (Non AC Seater 2+2 Push Back),22:30,03h 55m,02:25,"4.1
+33",320,28 Seats available,TELENGANA
+Khammam to Hyderabad,https://www.redbus.in/bus-tickets/khammam-to-hyderabad,TGSRTC - 8827,Super Luxury (Non AC Seater 2+2 Push Back),22:55,04h 25m,03:20,"4.0
+17",320,29 Seats available,TELENGANA
+Khammam to Hyderabad,https://www.redbus.in/bus-tickets/khammam-to-hyderabad,TGSRTC - 6631,Super Luxury (Non AC Seater 2+2 Push Back),23:00,04h 30m,03:30,3.7,320,27 Seats available,TELENGANA
+Khammam to Hyderabad,https://www.redbus.in/bus-tickets/khammam-to-hyderabad,TGSRTC - 4166,Rajdhani (AC Semi Sleeper 2+2),23:00,04h 00m,03:00,"3.9
+14",389,35 Seats available,TELENGANA
+Khammam to Hyderabad,https://www.redbus.in/bus-tickets/khammam-to-hyderabad,TGSRTC - 8992,Super Luxury (Non AC Seater 2+2 Push Back),23:25,03h 55m,03:20,"4.3
+17",320,26 Seats available,TELENGANA
+Khammam to Hyderabad,https://www.redbus.in/bus-tickets/khammam-to-hyderabad,TGSRTC - 64008,Rajdhani (AC Semi Sleeper 2+2),23:30,04h 00m,03:30,"3.9
+69",389,34 Seats available,TELENGANA
+Khammam to Hyderabad,https://www.redbus.in/bus-tickets/khammam-to-hyderabad,TGSRTC - 8805,RAJDHANI (A.C. Semi Sleeper),23:45,03h 45m,03:30,"4.0
+25",389,19 Seats available,TELENGANA
+Khammam to Hyderabad,https://www.redbus.in/bus-tickets/khammam-to-hyderabad,TGSRTC - 7646,Super Luxury (Non AC Seater 2+2 Push Back),23:55,04h 05m,04:00,"4.5
+10",320,26 Seats available,TELENGANA
+Khammam to Hyderabad,https://www.redbus.in/bus-tickets/khammam-to-hyderabad,TGSRTC - 1323,LAHARI A/C SLEEPER CUM SEATER,23:55,03h 35m,03:30,"2.9
+47",389,35 Seats available,TELENGANA
+Khammam to Hyderabad,https://www.redbus.in/bus-tickets/khammam-to-hyderabad,TGSRTC - 8600,Super Luxury (Non AC Seater 2+2 Push Back),23:55,05h 25m,05:20,"4.8
+31",320,24 Seats available,TELENGANA
+Khammam to Hyderabad,https://www.redbus.in/bus-tickets/khammam-to-hyderabad,BSR Tours And Travels,NON A/C Seater (2+2),23:40,06h 20m,06:00,"4.5
+23",400,23 Seats available,TELENGANA
+Khammam to Hyderabad,https://www.redbus.in/bus-tickets/khammam-to-hyderabad,Bharathi Tours & Travels,Non A/C Seater / Sleeper (2+1),23:40,04h 20m,04:00,"4.5
+12",351,16 Seats available,TELENGANA
+Khammam to Hyderabad,https://www.redbus.in/bus-tickets/khammam-to-hyderabad,RRR Travels,A/C Sleeper (2+1),23:50,05h 40m,05:30,"4.7
+38",555,22 Seats available,TELENGANA
+Khammam to Hyderabad,https://www.redbus.in/bus-tickets/khammam-to-hyderabad,Sri KVR Travels,A/C Seater / Sleeper (2+1),23:58,05h 02m,05:00,3.6,410,23 Seats available,TELENGANA
+Khammam to Hyderabad,https://www.redbus.in/bus-tickets/khammam-to-hyderabad,Nani’s Sai Krishna Travels,Non A/C Seater / Sleeper (2+1),23:59,05h 01m,05:00,"3.6
+12",399,21 Seats available,TELENGANA
+Hyderabad to Vijayawada,https://www.redbus.in/bus-tickets/hyderabad-to-vijayawada,APSRTC - 2688,"SUPER LUXURY (NON-AC, 2 + 2 PUSH BACK)",20:00,06h 45m,02:45,"4.0
+10",436,24 Seats available,TELENGANA
+Hyderabad to Vijayawada,https://www.redbus.in/bus-tickets/hyderabad-to-vijayawada,APSRTC - 2678,NIGHT RIDER (SEATER CUM SLEEPER),20:00,07h 00m,03:00,"4.2
+6",595,29 Seats available,TELENGANA
+Hyderabad to Vijayawada,https://www.redbus.in/bus-tickets/hyderabad-to-vijayawada,APSRTC - 2786,"SUPER LUXURY (NON-AC, 2 + 2 PUSH BACK)",20:00,07h 45m,03:45,"4.6
+7",436,29 Seats available,TELENGANA
+Hyderabad to Vijayawada,https://www.redbus.in/bus-tickets/hyderabad-to-vijayawada,APSRTC - 4880,STAR LINER(NON-AC SLEEPER 2+1),20:00,06h 45m,02:45,3.9,565,33 Seats available,TELENGANA
+Hyderabad to Vijayawada,https://www.redbus.in/bus-tickets/hyderabad-to-vijayawada,APSRTC - 3622,"SUPER LUXURY (NON-AC, 2 + 2 PUSH BACK)",20:00,07h 35m,03:35,"4.6
+76",412,30 Seats available,TELENGANA
+Hyderabad to Vijayawada,https://www.redbus.in/bus-tickets/hyderabad-to-vijayawada,APSRTC - 3977,"SUPER LUXURY (NON-AC, 2 + 2 PUSH BACK)",20:15,08h 00m,04:15,"3.6
+7",436,15 Seats available,TELENGANA
+Hyderabad to Vijayawada,https://www.redbus.in/bus-tickets/hyderabad-to-vijayawada,APSRTC - 2549,NIGHT RIDER (SEATER CUM SLEEPER),20:15,06h 00m,02:15,"4.0
+14",595,29 Seats available,TELENGANA
+Hyderabad to Vijayawada,https://www.redbus.in/bus-tickets/hyderabad-to-vijayawada,APSRTC - 2876,STAR LINER(NON-AC SLEEPER 2+1),20:15,07h 15m,03:30,"4.8
+8",565,20 Seats available,TELENGANA
+Hyderabad to Vijayawada,https://www.redbus.in/bus-tickets/hyderabad-to-vijayawada,APSRTC - 37801,INDRA(A.C. Seater),20:20,07h 25m,03:45,"3.8
+7",528,28 Seats available,TELENGANA
+Hyderabad to Vijayawada,https://www.redbus.in/bus-tickets/hyderabad-to-vijayawada,APSRTC - 4896,"SUPER LUXURY (NON-AC, 2 + 2 PUSH BACK)",20:30,07h 00m,03:30,"2.1
+6",436,20 Seats available,TELENGANA
+Hyderabad to Vijayawada,https://www.redbus.in/bus-tickets/hyderabad-to-vijayawada,APSRTC - 24262,"SUPER LUXURY (NON-AC, 2 + 2 PUSH BACK)",20:30,05h 30m,02:00,3.9,469,18 Seats available,TELENGANA
+Hyderabad to Vijayawada,https://www.redbus.in/bus-tickets/hyderabad-to-vijayawada,APSRTC - 4179,AMARAVATHI (VOLVO / SCANIA A.C Multi Axle),20:30,07h 30m,04:00,"4.1
+59",670,37 Seats available,TELENGANA
+Hyderabad to Vijayawada,https://www.redbus.in/bus-tickets/hyderabad-to-vijayawada,APSRTC - 3969,INDRA(A.C. Seater),20:30,06h 45m,03:15,"3.4
+8",528,37 Seats available,TELENGANA
+Hyderabad to Vijayawada,https://www.redbus.in/bus-tickets/hyderabad-to-vijayawada,APSRTC - 3971,"SUPER LUXURY (NON-AC, 2 + 2 PUSH BACK)",20:30,07h 15m,03:45,"3.8
+20",436,34 Seats available,TELENGANA
+Hyderabad to Vijayawada,https://www.redbus.in/bus-tickets/hyderabad-to-vijayawada,APSRTC - 3962,INDRA(A.C. Seater),20:40,07h 35m,04:15,"3.3
+39",528,29 Seats available,TELENGANA
+Hyderabad to Vijayawada,https://www.redbus.in/bus-tickets/hyderabad-to-vijayawada,FRESHBUS,Electric A/C Seater (2+2),21:50,07h 55m,05:45,"4.6
+514",348,27 Seats available,TELENGANA
+Hyderabad to Vijayawada,https://www.redbus.in/bus-tickets/hyderabad-to-vijayawada,NueGo,Electric A/C Seater (2+2),22:20,07h 40m,06:00,"4.5
+808",332,17 Seats available,TELENGANA
+Hyderabad to Vijayawada,https://www.redbus.in/bus-tickets/hyderabad-to-vijayawada,FRESHBUS,Electric A/C Seater (2+2),22:30,07h 25m,05:55,"4.6
+424",349,25 Seats available,TELENGANA
+Hyderabad to Vijayawada,https://www.redbus.in/bus-tickets/hyderabad-to-vijayawada,AdSai RK Travels,Non A/C Seater / Sleeper (2+1),21:50,06h 20m,04:10,"4.1
+28",449,10 Seats available,TELENGANA
+Hyderabad to Vijayawada,https://www.redbus.in/bus-tickets/hyderabad-to-vijayawada,FRESHBUS,Electric A/C Seater (2+2),23:10,07h 55m,07:05,"4.6
+418",349,27 Seats available,TELENGANA
+Hyderabad to Khammam,https://www.redbus.in/bus-tickets/hyderabad-to-khammam,TGSRTC - 8682,Rajdhani (AC Semi Sleeper 2+2),18:50,03h 10m,22:00,"3.9
+38",389,32 Seats available,TELENGANA
+Hyderabad to Khammam,https://www.redbus.in/bus-tickets/hyderabad-to-khammam,TGSRTC - 8618,Super Luxury (Non AC Seater 2+2 Push Back),18:55,04h 05m,23:00,"4.4
+22",320,28 Seats available,TELENGANA
+Hyderabad to Khammam,https://www.redbus.in/bus-tickets/hyderabad-to-khammam,TGSRTC - 64021,Rajdhani (AC Semi Sleeper 2+2),19:30,03h 30m,23:00,"4.3
+57",389,32 Seats available,TELENGANA
+Hyderabad to Khammam,https://www.redbus.in/bus-tickets/hyderabad-to-khammam,TGSRTC - 7645,Super Luxury (Non AC Seater 2+2 Push Back),19:30,06h 15m,01:45,"1.6
+14",320,31 Seats available,TELENGANA
+Hyderabad to Khammam,https://www.redbus.in/bus-tickets/hyderabad-to-khammam,TGSRTC - 8804,RAJDHANI (A.C. Semi Sleeper),20:35,05h 45m,02:20,"4.3
+26",389,27 Seats available,TELENGANA
+Hyderabad to Khammam,https://www.redbus.in/bus-tickets/hyderabad-to-khammam,TGSRTC - 64341,Super Luxury (Non AC Seater 2+2 Push Back),20:50,06h 20m,03:10,"4.3
+9",320,12 Seats available,TELENGANA
+Hyderabad to Khammam,https://www.redbus.in/bus-tickets/hyderabad-to-khammam,TGSRTC - 8825,Super Luxury (Non AC Seater 2+2 Push Back),21:00,05h 40m,02:40,"3.6
+15",320,22 Seats available,TELENGANA
+Hyderabad to Khammam,https://www.redbus.in/bus-tickets/hyderabad-to-khammam,TGSRTC - 8699,RAJDHANI (A.C. Semi Sleeper),21:00,04h 00m,01:00,"4.1
+43",389,37 Seats available,TELENGANA
+Hyderabad to Khammam,https://www.redbus.in/bus-tickets/hyderabad-to-khammam,TGSRTC - 8856,RAJDHANI (A.C. Semi Sleeper),21:00,06h 00m,03:00,"4.3
+19",389,17 Seats available,TELENGANA
+Hyderabad to Khammam,https://www.redbus.in/bus-tickets/hyderabad-to-khammam,TGSRTC - 8848,Super Luxury (Non AC Seater 2+2 Push Back),21:20,05h 35m,02:55,"4.6
+15",320,26 Seats available,TELENGANA
+Hyderabad to Khammam,https://www.redbus.in/bus-tickets/hyderabad-to-khammam,TGSRTC - 8624,Rajdhani (AC Semi Sleeper 2+2),21:30,04h 00m,01:30,"3.1
+4",389,31 Seats available,TELENGANA
+Hyderabad to Khammam,https://www.redbus.in/bus-tickets/hyderabad-to-khammam,TGSRTC - 8886,Lahari Non A/C Sleeper Cum Seater,21:30,05h 45m,03:15,"3.2
+29",320,15 Seats available,TELENGANA
+Hyderabad to Khammam,https://www.redbus.in/bus-tickets/hyderabad-to-khammam,TGSRTC - 64832,RAJDHANI (A.C. Semi Sleeper),22:00,05h 45m,03:45,"3.4
+20",389,33 Seats available,TELENGANA
+Hyderabad to Khammam,https://www.redbus.in/bus-tickets/hyderabad-to-khammam,TGSRTC - 34332,LAHARI A/C SLEEPER CUM SEATER,22:00,04h 25m,02:25,3.8,389,31 Seats available,TELENGANA
+Hyderabad to Khammam,https://www.redbus.in/bus-tickets/hyderabad-to-khammam,TGSRTC - 8971,Super Luxury (Non AC Seater 2+2 Push Back),22:00,06h 10m,04:10,"3.7
+27",320,29 Seats available,TELENGANA
+Hyderabad to Khammam,https://www.redbus.in/bus-tickets/hyderabad-to-khammam,Siri Tours and Travels,A/C Seater / Sleeper (2+1),18:50,05h 40m,00:30,"3.0
+7",555,16 Seats available,TELENGANA
+Hyderabad to Khammam,https://www.redbus.in/bus-tickets/hyderabad-to-khammam,Puri Jagannadh Tours And Travels,Non A/C Seater / Sleeper (2+1),19:05,07h 25m,02:30,3.9,465,12 Seats available,TELENGANA
+Hyderabad to Khammam,https://www.redbus.in/bus-tickets/hyderabad-to-khammam,Sri Krishna Travels,Non A/C Seater / Sleeper (2+1),19:30,04h 00m,23:30,"3.8
+9",600,27 Seats available,TELENGANA
+Hyderabad to Khammam,https://www.redbus.in/bus-tickets/hyderabad-to-khammam,SBS Tours and Travels,Non A/C Seater / Sleeper (2+1),20:30,06h 45m,03:15,4.3,333,14 Seats available,TELENGANA
+Hyderabad to Khammam,https://www.redbus.in/bus-tickets/hyderabad-to-khammam,Gupta Travels Galaxy,NON A/C Seater / Sleeper (2+2),21:00,06h 15m,03:15,"3.8
+5",600,29 Seats available,TELENGANA
+Hyderabad to Adilabad,https://www.redbus.in/bus-tickets/hyderabad-to-adilabad,TGSRTC - 1155,Lahari Non A/C Sleeper Cum Seater,19:05,06h 15m,01:20,"1.6
+6",533,41 Seats available,TELENGANA
+Hyderabad to Adilabad,https://www.redbus.in/bus-tickets/hyderabad-to-adilabad,TGSRTC - 7902,Super Luxury (Non AC Seater 2+2 Push Back),19:40,07h 30m,03:10,"4.9
+11",504,30 Seats available,TELENGANA
+Hyderabad to Adilabad,https://www.redbus.in/bus-tickets/hyderabad-to-adilabad,TGSRTC - 7936,Super Luxury (Non AC Seater 2+2 Push Back),19:50,06h 30m,02:20,"1.7
+8",504,31 Seats available,TELENGANA
+Hyderabad to Adilabad,https://www.redbus.in/bus-tickets/hyderabad-to-adilabad,TGSRTC - 7908,Super Luxury (Non AC Seater 2+2 Push Back),20:30,07h 30m,04:00,"3.6
+32",504,31 Seats available,TELENGANA
+Hyderabad to Adilabad,https://www.redbus.in/bus-tickets/hyderabad-to-adilabad,TGSRTC - 7906,Lahari Non A/C Sleeper Cum Seater,21:30,07h 30m,05:00,"4.6
+76",504,45 Seats available,TELENGANA
+Hyderabad to Adilabad,https://www.redbus.in/bus-tickets/hyderabad-to-adilabad,TGSRTC - 7912,Super Luxury (Non AC Seater 2+2 Push Back),21:50,07h 30m,05:20,"3.8
+58",504,21 Seats available,TELENGANA
+Hyderabad to Adilabad,https://www.redbus.in/bus-tickets/hyderabad-to-adilabad,TGSRTC - 1966,Rajdhani (AC Semi Sleeper 2+2),22:00,07h 15m,05:15,"4.2
+45",611,28 Seats available,TELENGANA
+Hyderabad to Adilabad,https://www.redbus.in/bus-tickets/hyderabad-to-adilabad,TGSRTC - 7961,LAHARI A/C SLEEPER CUM SEATER,22:30,07h 30m,06:00,"4.1
+81",611,39 Seats available,TELENGANA
+Hyderabad to Adilabad,https://www.redbus.in/bus-tickets/hyderabad-to-adilabad,TGSRTC - 7914,Super Luxury (Non AC Seater 2+2 Push Back),23:15,07h 30m,06:45,"3.7
+48",504,27 Seats available,TELENGANA
+Hyderabad to Adilabad,https://www.redbus.in/bus-tickets/hyderabad-to-adilabad,Shree Devnarayan Travels,NON A/C Seater/ Sleeper (2+1),20:30,07h 30m,04:00,4.3,1500,19 Seats available,TELENGANA
+Hyderabad to Adilabad,https://www.redbus.in/bus-tickets/hyderabad-to-adilabad,Vijayant Travels,A/C Sleeper (2+1),21:00,06h 15m,03:15,4.1,800,14 Seats available,TELENGANA
+Hyderabad to Adilabad,https://www.redbus.in/bus-tickets/hyderabad-to-adilabad,New Galaxy Travels,A/C Sleeper (2+1),22:00,06h 00m,04:00,"4.0
+168",540,9 Seats available,TELENGANA
+Hyderabad to Adilabad,https://www.redbus.in/bus-tickets/hyderabad-to-adilabad,Metro Tours and Travels,NON A/C Sleeper (2+1),22:15,07h 00m,05:15,"4.1
+69",479,10 Seats available,TELENGANA
+Hyderabad to Adilabad,https://www.redbus.in/bus-tickets/hyderabad-to-adilabad,Orange Tours And Travels,Volvo Multi-Axle A/C Semi Sleeper (2+2),19:00,04h 15m,23:15,"3.9
+304",400,20 Seats available,TELENGANA
+Kothagudem to Hyderabad,https://www.redbus.in/bus-tickets/kothagudem-to-hyderabad,TGSRTC - 6631,Super Luxury (Non AC Seater 2+2 Push Back),20:30,07h 00m,03:30,3.7,470,22 Seats available,TELENGANA
+Kothagudem to Hyderabad,https://www.redbus.in/bus-tickets/kothagudem-to-hyderabad,TGSRTC - 8925,Super Luxury (Non AC Seater 2+2 Push Back),21:30,07h 00m,04:30,"4.5
+10",497,31 Seats available,TELENGANA
+Kothagudem to Hyderabad,https://www.redbus.in/bus-tickets/kothagudem-to-hyderabad,TGSRTC - 8718,Super Luxury (Non AC Seater 2+2 Push Back),21:45,06h 00m,03:45,"4.5
+16",451,31 Seats available,TELENGANA
+Kothagudem to Hyderabad,https://www.redbus.in/bus-tickets/kothagudem-to-hyderabad,TGSRTC - 8797,RAJDHANI (A.C. Semi Sleeper),21:55,06h 00m,03:55,"2.2
+7",548,32 Seats available,TELENGANA
+Kothagudem to Hyderabad,https://www.redbus.in/bus-tickets/kothagudem-to-hyderabad,TGSRTC - 7646,Super Luxury (Non AC Seater 2+2 Push Back),22:00,06h 00m,04:00,"4.7
+14",451,30 Seats available,TELENGANA
+Kothagudem to Hyderabad,https://www.redbus.in/bus-tickets/kothagudem-to-hyderabad,TGSRTC - 1323,LAHARI A/C SLEEPER CUM SEATER,22:05,05h 25m,03:30,"3.5
+27",548,38 Seats available,TELENGANA
+Kothagudem to Hyderabad,https://www.redbus.in/bus-tickets/kothagudem-to-hyderabad,TGSRTC - 9998,Lahari Non A/C Sleeper Cum Seater,22:10,06h 10m,04:20,"4.4
+49",451,31 Seats available,TELENGANA
+Kothagudem to Hyderabad,https://www.redbus.in/bus-tickets/kothagudem-to-hyderabad,TGSRTC - 8874,Super Luxury (Non AC Seater 2+2 Push Back),22:15,06h 05m,04:20,"4.6
+14",451,31 Seats available,TELENGANA
+Kothagudem to Hyderabad,https://www.redbus.in/bus-tickets/kothagudem-to-hyderabad,TGSRTC - 8935,Super Luxury (Non AC Seater 2+2 Push Back),22:20,05h 50m,04:10,3.7,451,24 Seats available,TELENGANA
+Kothagudem to Hyderabad,https://www.redbus.in/bus-tickets/kothagudem-to-hyderabad,TGSRTC - 8734,Super Luxury (Non AC Seater 2+2 Push Back),22:30,06h 30m,05:00,"4.4
+18",451,26 Seats available,TELENGANA
+Kothagudem to Hyderabad,https://www.redbus.in/bus-tickets/kothagudem-to-hyderabad,TGSRTC - 8714,Super Luxury (Non AC Seater 2+2 Push Back),22:45,06h 15m,05:00,3.7,451,31 Seats available,TELENGANA
+Kothagudem to Hyderabad,https://www.redbus.in/bus-tickets/kothagudem-to-hyderabad,TGSRTC - 34333,LAHARI A/C SLEEPER CUM SEATER,23:05,05h 55m,05:00,"4.5
+10",548,37 Seats available,TELENGANA
+Kothagudem to Hyderabad,https://www.redbus.in/bus-tickets/kothagudem-to-hyderabad,TGSRTC - 8742,Super Luxury (Non AC Seater 2+2 Push Back),23:15,06h 30m,05:45,"3.7
+18",451,29 Seats available,TELENGANA
+Kothagudem to Hyderabad,https://www.redbus.in/bus-tickets/kothagudem-to-hyderabad,TGSRTC - 8901,Super Luxury (Non AC Seater 2+2 Push Back),23:15,06h 10m,05:25,"3.9
+24",451,25 Seats available,TELENGANA
+Kothagudem to Hyderabad,https://www.redbus.in/bus-tickets/kothagudem-to-hyderabad,TGSRTC - 8949,RAJDHANI (A.C. Semi Sleeper),23:30,05h 40m,05:10,"1.8
+11",548,35 Seats available,TELENGANA
+Kothagudem to Hyderabad,https://www.redbus.in/bus-tickets/kothagudem-to-hyderabad,BSR Tours And Travels,A/C Sleeper (2+1),23:30,06h 30m,06:00,"4.7
+147",780,14 Seats available,TELENGANA
+Kothagudem to Hyderabad,https://www.redbus.in/bus-tickets/kothagudem-to-hyderabad,SAIRAJ TRAVELS,A/C Sleeper (2+1),23:00,06h 30m,05:30,"4.7
+59",600,10 Seats available,TELENGANA
+Kothagudem to Hyderabad,https://www.redbus.in/bus-tickets/kothagudem-to-hyderabad,Orange Tours And Travels,NON A/C Seater/ Sleeper (2+1),23:05,05h 55m,05:00,"4.0
+55",400,27 Seats available,TELENGANA
+Kothagudem to Hyderabad,https://www.redbus.in/bus-tickets/kothagudem-to-hyderabad,VSR Tours and Travels,A/C Sleeper (2+1),23:30,06h 30m,06:00,"4.7
+23",584,19 Seats available,TELENGANA
+Kothagudem to Hyderabad,https://www.redbus.in/bus-tickets/kothagudem-to-hyderabad,Bharathi Tours & Travels,A/C Sleeper (2+1),23:25,05h 35m,05:00,"4.3
+33",531,12 Seats available,TELENGANA
+Hyderabad to Mancherial,https://www.redbus.in/bus-tickets/hyderabad-to-mancherial,TGSRTC - 8034,Super Luxury (Non AC Seater 2+2 Push Back),19:00,05h 10m,00:10,"2.6
+27",429,31 Seats available,TELENGANA
+Hyderabad to Mancherial,https://www.redbus.in/bus-tickets/hyderabad-to-mancherial,TGSRTC - 8049,Super Luxury (Non AC Seater 2+2 Push Back),19:30,05h 25m,00:55,"2.2
+4",429,31 Seats available,TELENGANA
+Hyderabad to Mancherial,https://www.redbus.in/bus-tickets/hyderabad-to-mancherial,TGSRTC - 8180,Super Luxury (Non AC Seater 2+2 Push Back),20:00,05h 20m,01:20,"3.6
+13",429,31 Seats available,TELENGANA
+Hyderabad to Mancherial,https://www.redbus.in/bus-tickets/hyderabad-to-mancherial,TGSRTC - 8032,Super Luxury (Non AC Seater 2+2 Push Back),20:30,06h 10m,02:40,"4.5
+16",429,30 Seats available,TELENGANA
+Hyderabad to Mancherial,https://www.redbus.in/bus-tickets/hyderabad-to-mancherial,TGSRTC - 8042,Super Luxury (Non AC Seater 2+2 Push Back),21:20,06h 15m,03:35,"3.8
+19",429,31 Seats available,TELENGANA
+Hyderabad to Mancherial,https://www.redbus.in/bus-tickets/hyderabad-to-mancherial,TGSRTC - 8053,LAHARI A/C SLEEPER CUM SEATER,21:30,06h 30m,04:00,"4.3
+29",520,30 Seats available,TELENGANA
+Hyderabad to Mancherial,https://www.redbus.in/bus-tickets/hyderabad-to-mancherial,TGSRTC - 8040,Super Luxury (Non AC Seater 2+2 Push Back),21:45,06h 15m,04:00,"3.8
+20",429,31 Seats available,TELENGANA
+Hyderabad to Mancherial,https://www.redbus.in/bus-tickets/hyderabad-to-mancherial,TGSRTC - 8011,Rajdhani (AC Semi Sleeper 2+2),21:45,05h 20m,03:05,"3.5
+22",520,30 Seats available,TELENGANA
+Hyderabad to Mancherial,https://www.redbus.in/bus-tickets/hyderabad-to-mancherial,TGSRTC - 8013,Rajdhani (AC Semi Sleeper 2+2),21:45,06h 30m,04:15,"4.0
+6",538,31 Seats available,TELENGANA
+Hyderabad to Mancherial,https://www.redbus.in/bus-tickets/hyderabad-to-mancherial,TGSRTC - 8194,LAHARI A/C SLEEPER CUM SEATER,22:00,06h 10m,04:10,"4.2
+96",520,43 Seats available,TELENGANA
+Hyderabad to Mancherial,https://www.redbus.in/bus-tickets/hyderabad-to-mancherial,TGSRTC - 8028,Lahari Non A/C Sleeper Cum Seater,22:30,06h 15m,04:45,"4.3
+43",447,14 Seats available,TELENGANA
+Hyderabad to Mancherial,https://www.redbus.in/bus-tickets/hyderabad-to-mancherial,TGSRTC - 8038,Super Luxury (Non AC Seater 2+2 Push Back),23:00,06h 10m,05:10,"4.7
+30",429,28 Seats available,TELENGANA
+Hyderabad to Mancherial,https://www.redbus.in/bus-tickets/hyderabad-to-mancherial,TGSRTC - 8135,LAHARI A/C SLEEPER CUM SEATER,23:30,06h 10m,05:40,"4.1
+86",520,37 Seats available,TELENGANA
+Hyderabad to Mancherial,https://www.redbus.in/bus-tickets/hyderabad-to-mancherial,TGSRTC - 8169,Super Luxury (Non AC Seater 2+2 Push Back),23:45,05h 20m,05:05,3.8,429,26 Seats available,TELENGANA
+Hyderabad to Mancherial,https://www.redbus.in/bus-tickets/hyderabad-to-mancherial,TGSRTC - 8171,Super Luxury (Non AC Seater 2+2 Push Back),23:45,06h 10m,05:55,"4.0
+34",429,29 Seats available,TELENGANA
+Hyderabad to Mancherial,https://www.redbus.in/bus-tickets/hyderabad-to-mancherial,DNR Express,AC Sleeper (2+1),21:30,04h 30m,02:00,"3.2
+16",799,8 Seats available,TELENGANA
+Guntur (Andhra Pradesh) to Hyderabad,https://www.redbus.in/bus-tickets/guntur-to-hyderabad,APSRTC - 4737,"SUPER LUXURY (NON-AC, 2 + 2 PUSH BACK)",21:00,05h 40m,02:40,"3.6
+22",483,23 Seats available,TELENGANA
+Guntur (Andhra Pradesh) to Hyderabad,https://www.redbus.in/bus-tickets/guntur-to-hyderabad,APSRTC - 4250,"SUPER LUXURY (NON-AC, 2 + 2 PUSH BACK)",21:15,05h 47m,03:02,"3.8
+31",483,31 Seats available,TELENGANA
+Guntur (Andhra Pradesh) to Hyderabad,https://www.redbus.in/bus-tickets/guntur-to-hyderabad,APSRTC - 4620,"SUPER LUXURY (NON-AC, 2 + 2 PUSH BACK)",21:45,05h 45m,03:30,"3.5
+14",483,17 Seats available,TELENGANA
+Guntur (Andhra Pradesh) to Hyderabad,https://www.redbus.in/bus-tickets/guntur-to-hyderabad,APSRTC - 4198,INDRA(A.C. Seater),22:11,05h 09m,03:20,"4.3
+129",585,34 Seats available,TELENGANA
+Guntur (Andhra Pradesh) to Hyderabad,https://www.redbus.in/bus-tickets/guntur-to-hyderabad,APSRTC - 4252,"SUPER LUXURY (NON-AC, 2 + 2 PUSH BACK)",22:12,05h 48m,04:00,"3.6
+49",483,11 Seats available,TELENGANA
+Guntur (Andhra Pradesh) to Hyderabad,https://www.redbus.in/bus-tickets/guntur-to-hyderabad,APSRTC - 4611,"SUPER LUXURY (NON-AC, 2 + 2 PUSH BACK)",22:15,05h 45m,04:00,"3.8
+51",483,16 Seats available,TELENGANA
+Guntur (Andhra Pradesh) to Hyderabad,https://www.redbus.in/bus-tickets/guntur-to-hyderabad,APSRTC - 4628,"SUPER LUXURY (NON-AC, 2 + 2 PUSH BACK)",22:30,06h 00m,04:30,"4.1
+34",483,20 Seats available,TELENGANA
+Guntur (Andhra Pradesh) to Hyderabad,https://www.redbus.in/bus-tickets/guntur-to-hyderabad,APSRTC - 4214,AMARAVATHI (VOLVO / SCANIA A.C Multi Axle),22:36,04h 29m,03:05,"3.8
+87",743,36 Seats available,TELENGANA
+Guntur (Andhra Pradesh) to Hyderabad,https://www.redbus.in/bus-tickets/guntur-to-hyderabad,APSRTC - 4178,AMARAVATHI (VOLVO / SCANIA A.C Multi Axle),22:40,05h 36m,04:16,"4.2
+54",817,36 Seats available,TELENGANA
+Guntur (Andhra Pradesh) to Hyderabad,https://www.redbus.in/bus-tickets/guntur-to-hyderabad,APSRTC - 4212,STAR LINER(NON-AC SLEEPER 2+1),22:40,05h 20m,04:00,"4.2
+50",626,6 Seats available,TELENGANA
+Guntur (Andhra Pradesh) to Hyderabad,https://www.redbus.in/bus-tickets/guntur-to-hyderabad,APSRTC - 4154,INDRA(A.C. Seater),22:56,05h 29m,04:25,"4.2
+113",585,24 Seats available,TELENGANA
+Guntur (Andhra Pradesh) to Hyderabad,https://www.redbus.in/bus-tickets/guntur-to-hyderabad,APSRTC - 4622,STAR LINER(NON-AC SLEEPER 2+1),23:30,04h 50m,04:20,"4.2
+85",626,8 Seats available,TELENGANA
+Guntur (Andhra Pradesh) to Hyderabad,https://www.redbus.in/bus-tickets/guntur-to-hyderabad,Yolo Bus,A/C Seater / Sleeper (2+1),22:15,07h 52m,06:07,"4.4
+541",450,15 Seats available,TELENGANA
+Guntur (Andhra Pradesh) to Hyderabad,https://www.redbus.in/bus-tickets/guntur-to-hyderabad,V Kaveri Travels,A/C Sleeper (2+1),23:10,07h 05m,06:15,"4.0
+6",550,12 Seats available,TELENGANA
+Guntur (Andhra Pradesh) to Hyderabad,https://www.redbus.in/bus-tickets/guntur-to-hyderabad,Zingbus Plus,A/C Seater / Sleeper (2+1),22:00,08h 00m,06:00,"4.7
+134",411,13 Seats available,TELENGANA
+Guntur (Andhra Pradesh) to Hyderabad,https://www.redbus.in/bus-tickets/guntur-to-hyderabad,AdSudha Sri Tours and Travels,A/C Sleeper (2+1),22:20,07h 40m,06:00,"3.9
+30",441,21 Seats available,TELENGANA
+Guntur (Andhra Pradesh) to Hyderabad,https://www.redbus.in/bus-tickets/guntur-to-hyderabad,IntrCity SmartBus,A/C Seater / Sleeper (2+1),22:45,07h 00m,05:45,"4.7
+416",629,8 Seats available,TELENGANA
+Kodad to Hyderabad,https://www.redbus.in/bus-tickets/kodad-to-hyderabad,TGSRTC - 40931,Super Luxury (Non AC Seater 2+2 Push Back),19:10,03h 00m,22:10,"1.8
+4",289,33 Seats available,TELENGANA
+Kodad to Hyderabad,https://www.redbus.in/bus-tickets/kodad-to-hyderabad,TGSRTC - 2991,Rajdhani (AC Semi Sleeper 2+2),19:55,03h 00m,22:55,"2.6
+20",351,33 Seats available,TELENGANA
+Kodad to Hyderabad,https://www.redbus.in/bus-tickets/kodad-to-hyderabad,TGSRTC - 40310,Super Luxury (Non AC Seater 2+2 Push Back),20:10,02h 40m,22:50,"2.7
+11",289,33 Seats available,TELENGANA
+Kodad to Hyderabad,https://www.redbus.in/bus-tickets/kodad-to-hyderabad,TGSRTC - 40710,Super Luxury (Non AC Seater 2+2 Push Back),20:40,03h 30m,00:10,"2.8
+8",289,33 Seats available,TELENGANA
+Kodad to Hyderabad,https://www.redbus.in/bus-tickets/kodad-to-hyderabad,TGSRTC - 5966,Rajdhani (AC Semi Sleeper 2+2),21:10,02h 40m,23:50,"1.5
+12",351,36 Seats available,TELENGANA
+Kodad to Hyderabad,https://www.redbus.in/bus-tickets/kodad-to-hyderabad,TGSRTC - 41131,Super Luxury (Non AC Seater 2+2 Push Back),21:25,03h 00m,00:25,"3.1
+8",289,33 Seats available,TELENGANA
+Kodad to Hyderabad,https://www.redbus.in/bus-tickets/kodad-to-hyderabad,TGSRTC - 1102,RAJDHANI (A.C. Semi Sleeper),21:35,02h 35m,00:10,"2.1
+15",351,37 Seats available,TELENGANA
+Kodad to Hyderabad,https://www.redbus.in/bus-tickets/kodad-to-hyderabad,TGSRTC - 41162,Super Luxury (Non AC Seater 2+2 Push Back),21:45,03h 00m,00:45,"4.3
+8",289,33 Seats available,TELENGANA
+Kodad to Hyderabad,https://www.redbus.in/bus-tickets/kodad-to-hyderabad,TGSRTC - 30710,RAJDHANI (A.C. Semi Sleeper),21:55,02h 40m,00:35,"2.6
+14",351,37 Seats available,TELENGANA
+Kodad to Hyderabad,https://www.redbus.in/bus-tickets/kodad-to-hyderabad,TGSRTC - 41362,Super Luxury (Non AC Seater 2+2 Push Back),22:05,03h 00m,01:05,"3.2
+12",289,33 Seats available,TELENGANA
+Kodad to Hyderabad,https://www.redbus.in/bus-tickets/kodad-to-hyderabad,TGSRTC - 30510,RAJDHANI (A.C. Semi Sleeper),22:10,02h 40m,00:50,3.2,351,36 Seats available,TELENGANA
+Kodad to Hyderabad,https://www.redbus.in/bus-tickets/kodad-to-hyderabad,TGSRTC - 41562,Super Luxury (Non AC Seater 2+2 Push Back),22:40,03h 10m,01:50,"4.0
+17",289,33 Seats available,TELENGANA
+Kodad to Hyderabad,https://www.redbus.in/bus-tickets/kodad-to-hyderabad,TGSRTC - 41762,Super Luxury (Non AC Seater 2+2 Push Back),22:40,03h 00m,01:40,"2.5
+6",289,33 Seats available,TELENGANA
+Kodad to Hyderabad,https://www.redbus.in/bus-tickets/kodad-to-hyderabad,TGSRTC - 1464,RAJDHANI (A.C. Semi Sleeper),22:45,02h 40m,01:25,"3.7
+15",351,37 Seats available,TELENGANA
+Kodad to Hyderabad,https://www.redbus.in/bus-tickets/kodad-to-hyderabad,TGSRTC - 41531,Super Luxury (Non AC Seater 2+2 Push Back),23:00,02h 45m,01:45,"4.7
+9",289,33 Seats available,TELENGANA
+Kodad to Hyderabad,https://www.redbus.in/bus-tickets/kodad-to-hyderabad,APSRTC - 3793,"SUPER LUXURY (NON-AC, 2 + 2 PUSH BACK)",23:40,03h 05m,02:45,"3.3
+8",318,31 Seats available,TELENGANA
+Hyderabad to Ongole,https://www.redbus.in/bus-tickets/hyderabad-to-ongole,APSRTC - 5926,"SUPER LUXURY (NON-AC, 2 + 2 PUSH BACK)",20:15,09h 30m,05:45,"4.1
+54",522,23 Seats available,TELENGANA
+Hyderabad to Ongole,https://www.redbus.in/bus-tickets/hyderabad-to-ongole,APSRTC - 5381,"SUPER LUXURY (NON-AC, 2 + 2 PUSH BACK)",20:30,10h 30m,07:00,"4.3
+7",624,27 Seats available,TELENGANA
+Hyderabad to Ongole,https://www.redbus.in/bus-tickets/hyderabad-to-ongole,APSRTC - 5020,DOLPHIN CRUISE (VOLVO / SCANIA A.C Multi Axle),20:30,07h 45m,04:15,"4.6
+16",805,37 Seats available,TELENGANA
+Hyderabad to Ongole,https://www.redbus.in/bus-tickets/hyderabad-to-ongole,APSRTC - 5876,"SUPER LUXURY (NON-AC, 2 + 2 PUSH BACK)",20:30,09h 00m,05:30,"3.8
+55",555,26 Seats available,TELENGANA
+Hyderabad to Ongole,https://www.redbus.in/bus-tickets/hyderabad-to-ongole,APSRTC - 5914,"SUPER LUXURY (NON-AC, 2 + 2 PUSH BACK)",20:40,08h 50m,05:30,"3.5
+47",522,30 Seats available,TELENGANA
+Hyderabad to Ongole,https://www.redbus.in/bus-tickets/hyderabad-to-ongole,APSRTC - 5928,"SUPER LUXURY (NON-AC, 2 + 2 PUSH BACK)",20:45,08h 15m,05:00,"3.9
+60",522,18 Seats available,TELENGANA
+Hyderabad to Ongole,https://www.redbus.in/bus-tickets/hyderabad-to-ongole,APSRTC - 5976,"SUPER LUXURY (NON-AC, 2 + 2 PUSH BACK)",20:50,09h 25m,06:15,4.0,558,25 Seats available,TELENGANA
+Hyderabad to Ongole,https://www.redbus.in/bus-tickets/hyderabad-to-ongole,APSRTC - 58231,"SUPER LUXURY (NON-AC, 2 + 2 PUSH BACK)",20:50,08h 55m,05:45,"3.9
+37",555,23 Seats available,TELENGANA
+Hyderabad to Ongole,https://www.redbus.in/bus-tickets/hyderabad-to-ongole,APSRTC - 5863,"SUPER LUXURY (NON-AC, 2 + 2 PUSH BACK)",21:00,08h 15m,05:15,"4.5
+47",555,21 Seats available,TELENGANA
+Hyderabad to Ongole,https://www.redbus.in/bus-tickets/hyderabad-to-ongole,APSRTC - 48604,AMARAVATHI (VOLVO / SCANIA A.C Multi Axle),21:00,08h 10m,05:10,"4.5
+66",802,43 Seats available,TELENGANA
+Hyderabad to Ongole,https://www.redbus.in/bus-tickets/hyderabad-to-ongole,Sri Krishna Travels,A/C Sleeper (2+1),21:00,08h 30m,05:30,"4.1
+29",800,16 Seats available,TELENGANA
+Hyderabad to Ongole,https://www.redbus.in/bus-tickets/hyderabad-to-ongole,VV Vinayak Travels,Non A/C Seater / Sleeper (2+1),21:20,08h 55m,06:15,"4.0
+88",403,15 Seats available,TELENGANA
+Hyderabad to Ongole,https://www.redbus.in/bus-tickets/hyderabad-to-ongole,Kaveri Travels,Volvo Multi Axle A/C Sleeper I-Shift B11R (2+1),20:40,09h 05m,05:45,"4.1
+181",749,19 Seats available,TELENGANA
+Hyderabad to Ongole,https://www.redbus.in/bus-tickets/hyderabad-to-ongole,AdKKaveri Travels,Volvo Multi-Axle A/C Sleeper (2+1),20:45,07h 45m,04:30,"3.8
+99",800,14 Seats available,TELENGANA
+Hyderabad to Ongole,https://www.redbus.in/bus-tickets/hyderabad-to-ongole,Kamakshi Tours And Travels,Non A/C Seater / Sleeper (2+1),20:45,09h 15m,06:00,"4.4
+294",450,17 Seats available,TELENGANA
+Hyderabad to Nirmal,https://www.redbus.in/bus-tickets/hyderabad-to-nirmal,TGSRTC - 8113,Super Luxury (Non AC Seater 2+2 Push Back),19:00,04h 10m,23:10,"3.9
+27",376,31 Seats available,TELENGANA
+Hyderabad to Nirmal,https://www.redbus.in/bus-tickets/hyderabad-to-nirmal,TGSRTC - 7891,Super Luxury (Non AC Seater 2+2 Push Back),19:15,05h 40m,00:55,"4.2
+4",376,33 Seats available,TELENGANA
+Hyderabad to Nirmal,https://www.redbus.in/bus-tickets/hyderabad-to-nirmal,TGSRTC - 7902,Super Luxury (Non AC Seater 2+2 Push Back),19:40,05h 40m,01:20,"2.2
+6",376,30 Seats available,TELENGANA
+Hyderabad to Nirmal,https://www.redbus.in/bus-tickets/hyderabad-to-nirmal,TGSRTC - 7936,Super Luxury (Non AC Seater 2+2 Push Back),19:50,04h 40m,00:30,"3.0
+13",376,31 Seats available,TELENGANA
+Hyderabad to Nirmal,https://www.redbus.in/bus-tickets/hyderabad-to-nirmal,TGSRTC - 7906,Lahari Non A/C Sleeper Cum Seater,19:50,07h 20m,03:10,"4.0
+19",376,35 Seats available,TELENGANA
+Hyderabad to Nirmal,https://www.redbus.in/bus-tickets/hyderabad-to-nirmal,TGSRTC - 8005,Super Luxury (Non AC Seater 2+2 Push Back),21:00,05h 45m,02:45,"3.8
+23",376,31 Seats available,TELENGANA
+Hyderabad to Nirmal,https://www.redbus.in/bus-tickets/hyderabad-to-nirmal,TGSRTC - 1966,RAJDHANI (A.C. Semi Sleeper),22:00,05h 35m,03:35,"3.5
+22",456,33 Seats available,TELENGANA
+Hyderabad to Nirmal,https://www.redbus.in/bus-tickets/hyderabad-to-nirmal,TGSRTC - 7961,LAHARI A/C SLEEPER CUM SEATER,22:30,05h 40m,04:10,"4.3
+21",456,37 Seats available,TELENGANA
+Hyderabad to Nirmal,https://www.redbus.in/bus-tickets/hyderabad-to-nirmal,TGSRTC - 7864,Super Luxury (Non AC Seater 2+2 Push Back),23:00,05h 45m,04:45,"3.9
+5",376,27 Seats available,TELENGANA
+Hyderabad to Nirmal,https://www.redbus.in/bus-tickets/hyderabad-to-nirmal,TGSRTC - 7979,Super Luxury (Non AC Seater 2+2 Push Back),23:00,05h 40m,04:40,"4.2
+48",376,29 Seats available,TELENGANA
+Hyderabad to Nirmal,https://www.redbus.in/bus-tickets/hyderabad-to-nirmal,TGSRTC - 9455,Super Luxury (Non AC Seater 2+2 Push Back),23:30,05h 45m,05:15,"4.8
+26",376,30 Seats available,TELENGANA
+Hyderabad to Nirmal,https://www.redbus.in/bus-tickets/hyderabad-to-nirmal,TGSRTC - 7981,Super Luxury (Non AC Seater 2+2 Push Back),23:45,05h 45m,05:30,"4.5
+67",376,31 Seats available,TELENGANA
+Hyderabad to Nirmal,https://www.redbus.in/bus-tickets/hyderabad-to-nirmal,Orange Tours And Travels,Bharat Benz A/C Sleeper (2+1),19:00,04h 15m,23:15,3.2,700,7 Seats available,TELENGANA
+Hyderabad to Nirmal,https://www.redbus.in/bus-tickets/hyderabad-to-nirmal,Sahara Tours and Travels,Bharat Benz A/C Seater (2+2),18:55,02h 50m,21:45,"3.8
+45",400,21 Seats available,TELENGANA
+Hyderabad to Nirmal,https://www.redbus.in/bus-tickets/hyderabad-to-nirmal,Orange Tours And Travels,Volvo Multi-Axle A/C Semi Sleeper (2+2),19:00,03h 00m,22:00,"3.0
+59",350,20 Seats available,TELENGANA
+Hyderabad to Nirmal,https://www.redbus.in/bus-tickets/hyderabad-to-nirmal,Pooja Travels,A/C Sleeper (2+1),20:00,07h 30m,03:30,3.1,666,15 Seats available,TELENGANA
+Hyderabad to Nirmal,https://www.redbus.in/bus-tickets/hyderabad-to-nirmal,Pooja Travels,A/C Sleeper (2+1),20:00,06h 30m,02:30,3.1,666,19 Seats available,TELENGANA
+Hyderabad to Guntur (Andhra Pradesh),https://www.redbus.in/bus-tickets/hyderabad-to-guntur,APSRTC - 4179,AMARAVATHI (VOLVO / SCANIA A.C Multi Axle),20:30,07h 59m,04:29,"4.2
+64",767,35 Seats available,TELENGANA
+Hyderabad to Guntur (Andhra Pradesh),https://www.redbus.in/bus-tickets/hyderabad-to-guntur,APSRTC - 42443,"SUPER LUXURY (NON-AC, 2 + 2 PUSH BACK)",21:00,08h 45m,05:45,"3.4
+64",451,18 Seats available,TELENGANA
+Hyderabad to Guntur (Andhra Pradesh),https://www.redbus.in/bus-tickets/hyderabad-to-guntur,APSRTC - 4629,"SUPER LUXURY (NON-AC, 2 + 2 PUSH BACK)",21:00,08h 00m,05:00,"3.7
+28",451,18 Seats available,TELENGANA
+Hyderabad to Guntur (Andhra Pradesh),https://www.redbus.in/bus-tickets/hyderabad-to-guntur,APSRTC - 4155,INDRA(A.C. Seater),21:10,07h 14m,04:24,"4.2
+99",545,33 Seats available,TELENGANA
+Hyderabad to Guntur (Andhra Pradesh),https://www.redbus.in/bus-tickets/hyderabad-to-guntur,APSRTC - 4619,STAR LINER(NON-AC SLEEPER 2+1),21:20,07h 10m,04:30,"3.9
+97",626,12 Seats available,TELENGANA
+Hyderabad to Guntur (Andhra Pradesh),https://www.redbus.in/bus-tickets/hyderabad-to-guntur,APSRTC - 4223,INDRA(A.C. Seater),21:45,07h 10m,04:55,"3.7
+112",545,20 Seats available,TELENGANA
+Hyderabad to Guntur (Andhra Pradesh),https://www.redbus.in/bus-tickets/hyderabad-to-guntur,APSRTC - 4621,"SUPER LUXURY (NON-AC, 2 + 2 PUSH BACK)",21:50,07h 55m,05:45,"3.4
+57",483,18 Seats available,TELENGANA
+Hyderabad to Guntur (Andhra Pradesh),https://www.redbus.in/bus-tickets/hyderabad-to-guntur,APSRTC - 4267,"SUPER LUXURY (NON-AC, 2 + 2 PUSH BACK)",22:15,06h 15m,04:30,"3.7
+50",451,33 Seats available,TELENGANA
+Hyderabad to Guntur (Andhra Pradesh),https://www.redbus.in/bus-tickets/hyderabad-to-guntur,APSRTC - 4181,STAR LINER(NON-AC SLEEPER 2+1),22:15,07h 25m,05:40,"4.2
+54",584,18 Seats available,TELENGANA
+Hyderabad to Guntur (Andhra Pradesh),https://www.redbus.in/bus-tickets/hyderabad-to-guntur,Zingbus Plus,A/C Seater / Sleeper (2+1),22:50,08h 00m,06:50,"4.5
+594",378,15 Seats available,TELENGANA
+Hyderabad to Guntur (Andhra Pradesh),https://www.redbus.in/bus-tickets/hyderabad-to-guntur,Sri Sanvi Tours and Travels,A/C Sleeper (2+1),22:20,07h 10m,05:30,"4.4
+318",557,17 Seats available,TELENGANA
+Hyderabad to Guntur (Andhra Pradesh),https://www.redbus.in/bus-tickets/hyderabad-to-guntur,GMRK Tours and Travels,Volvo A/C Semi Sleeper (2+2),22:30,07h 40m,06:10,"4.5
+431",449,37 Seats available,TELENGANA
+Hyderabad to Guntur (Andhra Pradesh),https://www.redbus.in/bus-tickets/hyderabad-to-guntur,AdIntrCity SmartBus,AC Sleeper (2+1),22:40,08h 45m,07:25,"4.3
+137",549,13 Seats available,TELENGANA
+Hyderabad to Guntur (Andhra Pradesh),https://www.redbus.in/bus-tickets/hyderabad-to-guntur,Yolo Bus,A/C Seater / Sleeper (2+1),22:15,07h 55m,06:10,"4.2
+389",450,22 Seats available,TELENGANA
+Hyderabad to Karimnagar,https://www.redbus.in/bus-tickets/hyderabad-to-karimnagar,TGSRTC - 7048,e-SUP LUXURY (2+2),19:00,03h 00m,22:00,3.5,283,36 Seats available,TELENGANA
+Hyderabad to Karimnagar,https://www.redbus.in/bus-tickets/hyderabad-to-karimnagar,TGSRTC - 7315,Super Luxury (Non AC Seater 2+2 Push Back),19:15,03h 15m,22:30,"2.2
+10",283,30 Seats available,TELENGANA
+Hyderabad to Karimnagar,https://www.redbus.in/bus-tickets/hyderabad-to-karimnagar,TGSRTC - 7052,e-SUP LUXURY (2+2),20:50,03h 00m,23:50,3.5,283,37 Seats available,TELENGANA
+Hyderabad to Karimnagar,https://www.redbus.in/bus-tickets/hyderabad-to-karimnagar,TGSRTC - 7354,Super Luxury (Non AC Seater 2+2 Push Back),21:05,03h 15m,00:20,"3.3
+5",283,31 Seats available,TELENGANA
+Hyderabad to Karimnagar,https://www.redbus.in/bus-tickets/hyderabad-to-karimnagar,TGSRTC - 7054,e-SUP LUXURY (2+2),21:30,03h 00m,00:30,"3.9
+23",283,31 Seats available,TELENGANA
+Hyderabad to Karimnagar,https://www.redbus.in/bus-tickets/hyderabad-to-karimnagar,TGSRTC - 7056,e-SUP LUXURY (2+2),22:10,03h 00m,01:10,"2.8
+7",283,31 Seats available,TELENGANA
+Hyderabad to Karimnagar,https://www.redbus.in/bus-tickets/hyderabad-to-karimnagar,TGSRTC - 9551,Super Luxury (Non AC Seater 2+2 Push Back),22:15,03h 45m,02:00,3.5,283,30 Seats available,TELENGANA
+Hyderabad to Karimnagar,https://www.redbus.in/bus-tickets/hyderabad-to-karimnagar,TGSRTC - 7358,Super Luxury (Non AC Seater 2+2 Push Back),22:15,03h 15m,01:30,3.5,283,31 Seats available,TELENGANA
+Hyderabad to Karimnagar,https://www.redbus.in/bus-tickets/hyderabad-to-karimnagar,TGSRTC - 7058,e-SUP LUXURY (2+2),22:50,03h 00m,01:50,3.5,283,37 Seats available,TELENGANA
+Hyderabad to Karimnagar,https://www.redbus.in/bus-tickets/hyderabad-to-karimnagar,TGSRTC - 7144,Super Luxury (Non AC Seater 2+2 Push Back),23:00,03h 50m,02:50,3.5,283,33 Seats available,TELENGANA
+Hyderabad to Karimnagar,https://www.redbus.in/bus-tickets/hyderabad-to-karimnagar,TGSRTC - 7153,Rajdhani (AC Semi Sleeper 2+2),23:05,03h 55m,03:00,3.5,343,31 Seats available,TELENGANA
+Hyderabad to Karimnagar,https://www.redbus.in/bus-tickets/hyderabad-to-karimnagar,TGSRTC - 7404,Super Luxury (Non AC Seater 2+2 Push Back),23:30,03h 30m,03:00,"4.8
+7",283,17 Seats available,TELENGANA
+Hyderabad to Karimnagar,https://www.redbus.in/bus-tickets/hyderabad-to-karimnagar,TGSRTC - 7060,e-SUP LUXURY (2+2),23:30,03h 00m,02:30,3.5,283,37 Seats available,TELENGANA
+Hyderabad to Karimnagar,https://www.redbus.in/bus-tickets/hyderabad-to-karimnagar,TGSRTC - 7062,e-SUP LUXURY (2+2),23:50,03h 00m,02:50,"3.2
+17",283,31 Seats available,TELENGANA
+Hyderabad to Karimnagar,https://www.redbus.in/bus-tickets/hyderabad-to-karimnagar,DNR Express,AC Sleeper (2+1),21:30,02h 29m,23:59,"2.1
+6",799,19 Seats available,TELENGANA
+Hyderabad to Karimnagar,https://www.redbus.in/bus-tickets/hyderabad-to-karimnagar,Bhumi travels,AC Seater (2+2),22:00,05h 00m,03:00,2.0,2000,36 Seats available,TELENGANA
+Hyderabad to Karimnagar,https://www.redbus.in/bus-tickets/hyderabad-to-karimnagar,Shree Saipooja Travels,A/C Seater/Sleeper (2+1),23:10,03h 20m,02:30,2.7,3000,42 Seats available,TELENGANA
+Hyderabad to Kothagudem,https://www.redbus.in/bus-tickets/hyderabad-to-kothagudem,TGSRTC - 8933,Super Luxury (Non AC Seater 2+2 Push Back),19:15,06h 30m,01:45,3.6,451,33 Seats available,TELENGANA
+Hyderabad to Kothagudem,https://www.redbus.in/bus-tickets/hyderabad-to-kothagudem,TGSRTC - 7645,Super Luxury (Non AC Seater 2+2 Push Back),19:30,08h 10m,03:40,"3.0
+11",451,31 Seats available,TELENGANA
+Hyderabad to Kothagudem,https://www.redbus.in/bus-tickets/hyderabad-to-kothagudem,TGSRTC - 34340,Rajdhani (AC Semi Sleeper 2+2),19:40,06h 00m,01:40,"3.0
+28",548,29 Seats available,TELENGANA
+Hyderabad to Kothagudem,https://www.redbus.in/bus-tickets/hyderabad-to-kothagudem,TGSRTC - 6906,Deluxe (Non AC Seater 2+2),20:20,06h 20m,02:40,3.6,396,28 Seats available,TELENGANA
+Hyderabad to Kothagudem,https://www.redbus.in/bus-tickets/hyderabad-to-kothagudem,TGSRTC - 34330,Super Luxury (Non AC Seater 2+2 Push Back),20:40,06h 30m,03:10,"4.6
+9",451,30 Seats available,TELENGANA
+Hyderabad to Kothagudem,https://www.redbus.in/bus-tickets/hyderabad-to-kothagudem,TGSRTC - 8902,Super Luxury (Non AC Seater 2+2 Push Back),20:45,06h 45m,03:30,"4.3
+29",451,30 Seats available,TELENGANA
+Hyderabad to Kothagudem,https://www.redbus.in/bus-tickets/hyderabad-to-kothagudem,TGSRTC - 6909,Deluxe (Non AC Seater 2+2),21:00,06h 30m,03:30,3.6,396,35 Seats available,TELENGANA
+Hyderabad to Kothagudem,https://www.redbus.in/bus-tickets/hyderabad-to-kothagudem,TGSRTC - 8727,Super Luxury (Non AC Seater 2+2 Push Back),21:15,06h 30m,03:45,"3.6
+6",451,24 Seats available,TELENGANA
+Hyderabad to Kothagudem,https://www.redbus.in/bus-tickets/hyderabad-to-kothagudem,TGSRTC - 8983,Rajdhani (AC Semi Sleeper 2+2),21:30,07h 30m,05:00,"3.4
+14",548,29 Seats available,TELENGANA
+Hyderabad to Kothagudem,https://www.redbus.in/bus-tickets/hyderabad-to-kothagudem,TGSRTC - 8875,Super Luxury (Non AC Seater 2+2 Push Back),21:30,06h 15m,03:45,"4.2
+9",451,32 Seats available,TELENGANA
+Hyderabad to Kothagudem,https://www.redbus.in/bus-tickets/hyderabad-to-kothagudem,TGSRTC - 9984,Lahari Non A/C Sleeper Cum Seater,21:30,06h 45m,04:15,"4.2
+49",451,44 Seats available,TELENGANA
+Hyderabad to Kothagudem,https://www.redbus.in/bus-tickets/hyderabad-to-kothagudem,TGSRTC - 8729,Super Luxury (Non AC Seater 2+2 Push Back),21:45,06h 05m,03:50,"3.6
+20",451,29 Seats available,TELENGANA
+Hyderabad to Kothagudem,https://www.redbus.in/bus-tickets/hyderabad-to-kothagudem,TGSRTC - 34332,LAHARI A/C SLEEPER CUM SEATER,22:00,06h 10m,04:10,"3.4
+11",548,31 Seats available,TELENGANA
+Hyderabad to Kothagudem,https://www.redbus.in/bus-tickets/hyderabad-to-kothagudem,TGSRTC - 9970,Super Luxury (Non AC Seater 2+2 Push Back),22:15,06h 00m,04:15,"4.3
+13",451,28 Seats available,TELENGANA
+Hyderabad to Kothagudem,https://www.redbus.in/bus-tickets/hyderabad-to-kothagudem,TGSRTC - 8930,Super Luxury (Non AC Seater 2+2 Push Back),22:30,07h 15m,05:45,"5.0
+7",497,26 Seats available,TELENGANA
+Hyderabad to Kothagudem,https://www.redbus.in/bus-tickets/hyderabad-to-kothagudem,BSR Tours And Travels,A/C Sleeper (2+1),22:00,06h 30m,04:30,"4.7
+156",780,13 Seats available,TELENGANA
+Hyderabad to Kothagudem,https://www.redbus.in/bus-tickets/hyderabad-to-kothagudem,Bharathi Tours & Travels,Non A/C Seater / Sleeper (2+1),21:20,08h 10m,05:30,"4.3
+69",404,11 Seats available,TELENGANA
+Hyderabad to Kothagudem,https://www.redbus.in/bus-tickets/hyderabad-to-kothagudem,SAIRAJ TRAVELS,A/C Sleeper (2+1),22:15,06h 45m,05:00,"4.5
+57",600,19 Seats available,TELENGANA
+Hyderabad to Kothagudem,https://www.redbus.in/bus-tickets/hyderabad-to-kothagudem,Bharathi Tours & Travels,Non A/C Seater / Sleeper (2+1),22:35,07h 20m,05:55,"4.3
+60",351,16 Seats available,TELENGANA
+Hyderabad to Kothagudem,https://www.redbus.in/bus-tickets/hyderabad-to-kothagudem,VSR Tours and Travels,A/C Sleeper (2+1),23:00,05h 30m,04:30,"4.6
+33",584,19 Seats available,TELENGANA
+Hyderabad to Bhadrachalam,https://www.redbus.in/bus-tickets/hyderabad-to-bhadrachalam,TGSRTC - 7645,Super Luxury (Non AC Seater 2+2 Push Back),19:30,09h 15m,04:45,"3.6
+18",517,30 Seats available,TELENGANA
+Hyderabad to Bhadrachalam,https://www.redbus.in/bus-tickets/hyderabad-to-bhadrachalam,TGSRTC - 34340,Rajdhani (AC Semi Sleeper 2+2),19:40,07h 00m,02:40,"3.3
+48",627,30 Seats available,TELENGANA
+Hyderabad to Bhadrachalam,https://www.redbus.in/bus-tickets/hyderabad-to-bhadrachalam,TGSRTC - 34330,Super Luxury (Non AC Seater 2+2 Push Back),20:40,07h 30m,04:10,"4.5
+37",517,31 Seats available,TELENGANA
+Hyderabad to Bhadrachalam,https://www.redbus.in/bus-tickets/hyderabad-to-bhadrachalam,TGSRTC - 8727,Super Luxury (Non AC Seater 2+2 Push Back),21:15,07h 30m,04:45,"4.7
+65",517,28 Seats available,TELENGANA
+Hyderabad to Bhadrachalam,https://www.redbus.in/bus-tickets/hyderabad-to-bhadrachalam,TGSRTC - 8729,Super Luxury (Non AC Seater 2+2 Push Back),21:45,07h 15m,05:00,"3.8
+62",517,26 Seats available,TELENGANA
+Hyderabad to Bhadrachalam,https://www.redbus.in/bus-tickets/hyderabad-to-bhadrachalam,TGSRTC - 34332,LAHARI A/C SLEEPER CUM SEATER,22:00,07h 00m,05:00,"4.1
+24",627,28 Seats available,TELENGANA
+Hyderabad to Bhadrachalam,https://www.redbus.in/bus-tickets/hyderabad-to-bhadrachalam,TGSRTC - 8725,Super Luxury (Non AC Seater 2+2 Push Back),23:00,07h 15m,06:15,"4.2
+9",517,24 Seats available,TELENGANA
+Hyderabad to Bhadrachalam,https://www.redbus.in/bus-tickets/hyderabad-to-bhadrachalam,TGSRTC - 8737,Super Luxury (Non AC Seater 2+2 Push Back),23:20,07h 30m,06:50,"4.4
+47",517,27 Seats available,TELENGANA
+Hyderabad to Bhadrachalam,https://www.redbus.in/bus-tickets/hyderabad-to-bhadrachalam,BSR Tours And Travels,A/C Sleeper (2+1),20:50,08h 40m,05:30,"4.6
+297",780,14 Seats available,TELENGANA
+Hyderabad to Bhadrachalam,https://www.redbus.in/bus-tickets/hyderabad-to-bhadrachalam,Bharathi Tours & Travels,Non A/C Seater / Sleeper (2+1),21:20,09h 10m,06:30,"4.2
+170",404,11 Seats available,TELENGANA
+Hyderabad to Bhadrachalam,https://www.redbus.in/bus-tickets/hyderabad-to-bhadrachalam,Bharathi Tours & Travels,Non A/C Seater / Sleeper (2+1),22:35,07h 15m,05:50,"4.0
+238",351,14 Seats available,TELENGANA
+Hyderabad to Bhadrachalam,https://www.redbus.in/bus-tickets/hyderabad-to-bhadrachalam,SAIRAJ TRAVELS,A/C Sleeper (2+1),22:15,07h 30m,05:45,"4.5
+120",600,17 Seats available,TELENGANA
+Hyderabad to Bhadrachalam,https://www.redbus.in/bus-tickets/hyderabad-to-bhadrachalam,VSR Tours and Travels,A/C Sleeper (2+1),21:15,08h 15m,05:30,"4.5
+70",584,18 Seats available,TELENGANA
+Hyderabad to Sathupally,https://www.redbus.in/bus-tickets/hyderabad-to-sathupalli,TGSRTC - 2492,Super Luxury (Non AC Seater 2+2 Push Back),19:30,06h 00m,01:30,3.9,456,31 Seats available,TELENGANA
+Hyderabad to Sathupally,https://www.redbus.in/bus-tickets/hyderabad-to-sathupalli,TGSRTC - 8804,RAJDHANI (A.C. Semi Sleeper),20:35,07h 15m,03:50,"3.5
+41",550,35 Seats available,TELENGANA
+Hyderabad to Sathupally,https://www.redbus.in/bus-tickets/hyderabad-to-sathupalli,TGSRTC - 2415,Super Luxury (Non AC Seater 2+2 Push Back),20:45,06h 55m,03:40,3.9,456,28 Seats available,TELENGANA
+Hyderabad to Sathupally,https://www.redbus.in/bus-tickets/hyderabad-to-sathupalli,TGSRTC - 64341,Super Luxury (Non AC Seater 2+2 Push Back),20:50,08h 05m,04:55,"4.2
+48",453,26 Seats available,TELENGANA
+Hyderabad to Sathupally,https://www.redbus.in/bus-tickets/hyderabad-to-sathupalli,TGSRTC - 8825,Super Luxury (Non AC Seater 2+2 Push Back),21:00,07h 30m,04:30,"4.6
+24",453,17 Seats available,TELENGANA
+Hyderabad to Sathupally,https://www.redbus.in/bus-tickets/hyderabad-to-sathupalli,TGSRTC - 8856,RAJDHANI (A.C. Semi Sleeper),21:00,07h 40m,04:40,"3.9
+31",550,32 Seats available,TELENGANA
+Hyderabad to Sathupally,https://www.redbus.in/bus-tickets/hyderabad-to-sathupalli,TGSRTC - 8848,Super Luxury (Non AC Seater 2+2 Push Back),21:20,07h 30m,04:50,"4.2
+44",453,28 Seats available,TELENGANA
+Hyderabad to Sathupally,https://www.redbus.in/bus-tickets/hyderabad-to-sathupalli,TGSRTC - 8886,Lahari Non A/C Sleeper Cum Seater,21:30,07h 30m,05:00,"4.4
+93",453,16 Seats available,TELENGANA
+Hyderabad to Sathupally,https://www.redbus.in/bus-tickets/hyderabad-to-sathupalli,TGSRTC - 64864,Super Luxury (Non AC Seater 2+2 Push Back),21:40,06h 10m,03:50,"4.6
+27",453,30 Seats available,TELENGANA
+Hyderabad to Sathupally,https://www.redbus.in/bus-tickets/hyderabad-to-sathupalli,TGSRTC - 64832,RAJDHANI (A.C. Semi Sleeper),22:00,07h 25m,05:25,"3.1
+37",550,12 Seats available,TELENGANA
+Hyderabad to Sathupally,https://www.redbus.in/bus-tickets/hyderabad-to-sathupalli,TGSRTC - 64827,Super Luxury (Non AC Seater 2+2 Push Back),22:15,07h 45m,06:00,"4.3
+38",453,5 Seats available,TELENGANA
+Hyderabad to Sathupally,https://www.redbus.in/bus-tickets/hyderabad-to-sathupalli,Sri Venkateswara Travels,Non A/C Seater / Sleeper (2+1),22:30,06h 30m,05:00,"4.3
+121",380,20 Seats available,TELENGANA
+Hyderabad to Sathupally,https://www.redbus.in/bus-tickets/hyderabad-to-sathupalli,Mozo travels,A/C Seater / Sleeper (2+1),22:40,06h 25m,05:05,"4.5
+79",550,20 Seats available,TELENGANA
+Hyderabad to Sathupally,https://www.redbus.in/bus-tickets/hyderabad-to-sathupalli,Mythri Tours And Travels,A/C Sleeper (2+1),23:00,05h 15m,04:15,"4.9
+27",699,7 Seats available,TELENGANA
+Hyderabad to Sathupally,https://www.redbus.in/bus-tickets/hyderabad-to-sathupalli,Bharathi Tours & Travels,Non A/C Seater / Sleeper (2+1),21:20,07h 40m,05:00,"3.7
+66",351,17 Seats available,TELENGANA
+Hyderabad to Sathupally,https://www.redbus.in/bus-tickets/hyderabad-to-sathupalli,Sri KVR Travels,Non A/C Seater / Sleeper (2+1),22:00,06h 45m,04:45,"3.9
+32",400,16 Seats available,TELENGANA
+Hyderabad to Anantapur (andhra pradesh),https://www.redbus.in/bus-tickets/hyderabad-to-ananthapur,TGSRTC - 1294,Lahari A/C sleeper,19:10,06h 20m,01:30,"4.5
+5",684,14 Seats available,TELENGANA
+Hyderabad to Anantapur (andhra pradesh),https://www.redbus.in/bus-tickets/hyderabad-to-ananthapur,TGSRTC - 1082,LAHARI A/C SLEEPER CUM SEATER,19:10,08h 05m,03:15,"3.0
+6",502,27 Seats available,TELENGANA
+Hyderabad to Anantapur (andhra pradesh),https://www.redbus.in/bus-tickets/hyderabad-to-ananthapur,TGSRTC - 1956,Super Luxury (Non AC Seater 2+2 Push Back),19:15,08h 00m,03:15,3.8,471,14 Seats available,TELENGANA
+Hyderabad to Anantapur (andhra pradesh),https://www.redbus.in/bus-tickets/hyderabad-to-ananthapur,TGSRTC - 1013,LAHARI A/C SLEEPER CUM SEATER,19:30,08h 25m,03:55,"3.8
+17",502,36 Seats available,TELENGANA
+Hyderabad to Anantapur (andhra pradesh),https://www.redbus.in/bus-tickets/hyderabad-to-ananthapur,TGSRTC - 7660,LAHARI A/C SLEEPER CUM SEATER,19:35,08h 25m,04:00,3.8,717,34 Seats available,TELENGANA
+Hyderabad to Anantapur (andhra pradesh),https://www.redbus.in/bus-tickets/hyderabad-to-ananthapur,TGSRTC - 9571,Lahari A/C sleeper,19:55,09h 00m,04:55,"3.5
+17",684,15 Seats available,TELENGANA
+Hyderabad to Anantapur (andhra pradesh),https://www.redbus.in/bus-tickets/hyderabad-to-ananthapur,TGSRTC - 8665,LAHARI A/C SLEEPER CUM SEATER,20:00,07h 00m,03:00,"3.6
+6",502,32 Seats available,TELENGANA
+Hyderabad to Anantapur (andhra pradesh),https://www.redbus.in/bus-tickets/hyderabad-to-ananthapur,TGSRTC - 7808,LAHARI A/C SLEEPER CUM SEATER,20:25,07h 50m,04:15,"3.0
+15",502,29 Seats available,TELENGANA
+Hyderabad to Anantapur (andhra pradesh),https://www.redbus.in/bus-tickets/hyderabad-to-ananthapur,TGSRTC - 1619,Lahari Non A/C Sleeper Cum Seater,20:30,08h 45m,05:15,"3.9
+117",473,36 Seats available,TELENGANA
+Hyderabad to Anantapur (andhra pradesh),https://www.redbus.in/bus-tickets/hyderabad-to-ananthapur,TGSRTC - 7810,LAHARI A/C SLEEPER CUM SEATER,20:55,07h 35m,04:30,"3.5
+13",502,27 Seats available,TELENGANA
+Hyderabad to Anantapur (andhra pradesh),https://www.redbus.in/bus-tickets/hyderabad-to-ananthapur,Sri Balaji Transports,A/C Seater / Sleeper (2+1),21:50,07h 55m,05:45,"4.4
+293",600,18 Seats available,TELENGANA
+Hyderabad to Anantapur (andhra pradesh),https://www.redbus.in/bus-tickets/hyderabad-to-ananthapur,Sree sivasankar Travels,NON A/C Seater (2+2),21:30,08h 52m,06:22,"4.3
+197",500,24 Seats available,TELENGANA
+Hyderabad to Anantapur (andhra pradesh),https://www.redbus.in/bus-tickets/hyderabad-to-ananthapur,Al madeena Travels,Non A/C Seater / Sleeper (2+1),21:15,09h 00m,06:15,"4.3
+334",549,22 Seats available,TELENGANA
+Hyderabad to Anantapur (andhra pradesh),https://www.redbus.in/bus-tickets/hyderabad-to-ananthapur,AdMeena tours and travels,A/C Seater / Sleeper (2+1),22:00,07h 45m,05:45,"3.9
+78",750,6 Seats available,TELENGANA
+Hyderabad to Anantapur (andhra pradesh),https://www.redbus.in/bus-tickets/hyderabad-to-ananthapur,Madhavi Travels,A/C Seater / Sleeper (2+1),22:00,07h 45m,05:45,"4.4
+128",649,24 Seats available,TELENGANA
+Hyderabad to Armoor,https://www.redbus.in/bus-tickets/hyderabad-to-armoor,TGSRTC - 4007,Super Luxury (Non AC Seater 2+2 Push Back),19:00,03h 30m,22:30,"1.9
+29",312,31 Seats available,TELENGANA
+Hyderabad to Armoor,https://www.redbus.in/bus-tickets/hyderabad-to-armoor,TGSRTC - 8113,Super Luxury (Non AC Seater 2+2 Push Back),19:00,03h 25m,22:25,"3.7
+30",310,31 Seats available,TELENGANA
+Hyderabad to Armoor,https://www.redbus.in/bus-tickets/hyderabad-to-armoor,TGSRTC - 8115,RAJDHANI (A.C. Semi Sleeper),19:25,03h 55m,23:20,"2.2
+22",377,34 Seats available,TELENGANA
+Hyderabad to Armoor,https://www.redbus.in/bus-tickets/hyderabad-to-armoor,TGSRTC - 1966,Rajdhani (AC Semi Sleeper 2+2),22:00,04h 35m,02:35,"3.6
+14",377,30 Seats available,TELENGANA
+Hyderabad to Armoor,https://www.redbus.in/bus-tickets/hyderabad-to-armoor,Vijayant Travels,A/C Sleeper (2+1),21:45,03h 30m,01:15,4.1,800,18 Seats available,TELENGANA
+Hyderabad to Armoor,https://www.redbus.in/bus-tickets/hyderabad-to-armoor,Orange Tours And Travels,A/C Sleeper (2+1),22:00,03h 45m,01:45,3.3,700,18 Seats available,TELENGANA
+Hyderabad to Armoor,https://www.redbus.in/bus-tickets/hyderabad-to-armoor,Mahadev Bus Service,Non A/C Seater / Sleeper (2+1),22:00,03h 00m,01:00,4.1,800,30 Seats available,TELENGANA
+Hyderabad to Armoor,https://www.redbus.in/bus-tickets/hyderabad-to-armoor,Ashoka Travels,Scania AC Multi Axle Sleeper (2+1),22:30,04h 00m,02:30,3.8,700,20 Seats available,TELENGANA
+Hyderabad to Armoor,https://www.redbus.in/bus-tickets/hyderabad-to-armoor,Shree Devnarayan Travels,NON A/C Seater/ Sleeper (2+1),20:30,04h 30m,01:00,4.3,1500,18 Seats available,TELENGANA
+Hyderabad to Armoor,https://www.redbus.in/bus-tickets/hyderabad-to-armoor,Saini Travels Pvt. Ltd.,A/C Sleeper (2+1),21:30,04h 10m,01:40,3.9,1100,30 Seats available,TELENGANA
+Hyderabad to Kodad,https://www.redbus.in/bus-tickets/hyderabad-to-kodad,APSRTC - 3622,"SUPER LUXURY (NON-AC, 2 + 2 PUSH BACK)",20:00,05h 00m,01:00,"2.0
+6",286,34 Seats available,TELENGANA
+Hyderabad to Kodad,https://www.redbus.in/bus-tickets/hyderabad-to-kodad,APSRTC - 3883,"SUPER LUXURY (NON-AC, 2 + 2 PUSH BACK)",20:50,04h 00m,00:50,"4.0
+17",286,34 Seats available,TELENGANA
+Hyderabad to Kodad,https://www.redbus.in/bus-tickets/hyderabad-to-kodad,APSRTC - 35136,INDRA(A.C. Seater),21:45,04h 30m,02:15,3.8,345,37 Seats available,TELENGANA
+Hyderabad to Kodad,https://www.redbus.in/bus-tickets/hyderabad-to-kodad,APSRTC - 35120,INDRA(A.C. Seater),22:00,05h 20m,03:20,"3.5
+13",345,35 Seats available,TELENGANA
+Hyderabad to Kodad,https://www.redbus.in/bus-tickets/hyderabad-to-kodad,APSRTC - 3917,"SUPER LUXURY (NON-AC, 2 + 2 PUSH BACK)",22:00,04h 30m,02:30,"4.7
+11",286,33 Seats available,TELENGANA
+Hyderabad to Kodad,https://www.redbus.in/bus-tickets/hyderabad-to-kodad,APSRTC - 3560,INDRA(A.C. Seater),22:30,04h 00m,02:30,3.8,345,34 Seats available,TELENGANA
+Hyderabad to Kodad,https://www.redbus.in/bus-tickets/hyderabad-to-kodad,BSR Tours And Travels,A/C Seater / Sleeper (2+1),19:00,05h 10m,00:10,5.0,680,27 Seats available,TELENGANA
+Hyderabad to Kodad,https://www.redbus.in/bus-tickets/hyderabad-to-kodad,BSR Tours And Travels,A/C Seater / Sleeper (2+1),19:00,05h 10m,00:10,4.5,580,25 Seats available,TELENGANA
+Hyderabad to Kodad,https://www.redbus.in/bus-tickets/hyderabad-to-kodad,SVR Tours and Travels,A/C Seater / Sleeper (2+1),19:05,03h 25m,22:30,3.4,580,28 Seats available,TELENGANA
+Hyderabad to Kodad,https://www.redbus.in/bus-tickets/hyderabad-to-kodad,Puri Jagannadh Tours And Travels,Non A/C Seater / Sleeper (2+1),19:45,06h 15m,02:00,3.9,499,23 Seats available,TELENGANA
+Hyderabad to Kodad,https://www.redbus.in/bus-tickets/hyderabad-to-kodad,DMR Travels,A/C Sleeper (2+1),20:40,05h 10m,01:50,3.6,699,18 Seats available,TELENGANA
