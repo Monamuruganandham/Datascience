@@ -1,0 +1,61 @@
+use global_electronics;
+#1. analyze the count of cutomer key by using city and gender
+SELECT city, gender, COUNT(CustomerKey) AS total_customers
+FROM customers_table
+GROUP BY city, gender
+ORDER BY total_customers DESC;
+
+#2.For ages greater than 50, retrieve the counts of males and females.
+SELECT 
+    age,
+    COUNT(CASE WHEN gender = 'Male' THEN 1 END) AS male_count,
+    COUNT(CASE WHEN gender = 'Female' THEN 1 END) AS female_count
+FROM customers_table
+WHERE age > 50
+GROUP BY age;
+
+#3.top 10 best selling products
+SELECT ProductKey,sum(Quantity) as total_quantity
+FROM finaldf_table
+GROUP BY ProductKey
+ORDER BY total_quantity desc
+LIMIT 10;
+
+# 4.count of stores in country wise
+SELECT country_x,count(Storekey) as store_count
+FROM finaldf_table
+group by country_x
+order by store_count desc;
+
+#5. Total Quantity of products by brand
+SELECT Brand,sum(Quantity) as total_quantity
+FROM finaldf_table
+group by brand;
+
+#6.profit analysis by brand
+SELECT brand,SUM(Quantity * (CAST(REPLACE(Unit_Price_usd, '$', '') AS DECIMAL(10,2)) - CAST(REPLACE(Unit_Cost_usd, '$', '') AS DECIMAL(10,2)))) as total_profit
+from finaldf_table
+group by brand;
+
+#7.Quantity and Details by Brand and Category for the United Kingdom
+SELECT product_name,brand,category,quantity,country_x
+from finaldf_table
+where country_x='United Kingdom';
+
+#8.Total Age by Continent Analysis
+SELECT continent, sum(age) as total_age
+FROM finaldf_table
+GROUP BY continent
+order by total_age;
+
+#9.Total Quantity by Product Category
+select category,sum(quantity) as total_quantity
+from finaldf_table
+group by category;
+
+#10.store analysis on total stores across country
+
+select Country_x,count(StoreKey)as total_stores 
+from finaldf_table 
+group by Country_x
+order by total_stores desc;
