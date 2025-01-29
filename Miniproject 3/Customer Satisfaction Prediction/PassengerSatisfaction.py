@@ -1,25 +1,28 @@
-import numpy as np
-import pandas as pd
-import joblib
 import streamlit as st
-import matplotlib.pyplot as plt
+import joblib
+import pandas as pd
+import altair as alt
 
-# Load the trained model
+# Load the model
 model_path = r"C:\Users\Mohan\PycharmProjects\pythonProject\miniproject 3\passenger_random_forest_model.pkl"
 try:
     model = joblib.load(model_path)
 except Exception as e:
     st.error(f"Error loading the model: {e}")
     model = None
-#https://images.unsplash.com/photo-1498098662025-04e60a212db4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmxpZ2h0JTIwY3VzdG9tZXJzfGVufDB8fDB8fHww
 
 if model is None:
     st.write("Model failed to load. Please check the model file.")
     st.stop()
 
-# Feature list (expected by the model)
+
+
+# Expected features in the model
 expected_features = [
+    "Gender",
+    "Customer Type",
     "Age",
+    "Type of Travel",
     "Class",
     "Flight Distance",
     "Inflight wifi service",
@@ -37,84 +40,89 @@ expected_features = [
     "Inflight service",
     "Cleanliness",
     "Departure Delay in Minutes",
-    "Arrival Delay in Minutes",
-    "Gender_Male",
-    "Customer Type_disloyal Customer",
-    "Type of Travel_Personal Travel",
+    "Arrival Delay in Minutes"
 ]
 
-# Streamlit app title
-st.markdown(f"""
+st.markdown(
+    """
     <style>
-    .stApp {{
-            background-image: url("https://images.unsplash.com/photo-1437846972679-9e6e537be46e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGZsaWdodCUyMGN1c3RvbWVyc3xlbnwwfHwwfHx8MA%3D%3D");
-            
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            
-    }}
-    
-    .stSidebar {{
-        background-image: url("https://images.unsplash.com/photo-1437846972679-9e6e537be46e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGZsaWdodCUyMGN1c3RvbWVyc3xlbnwwfHwwfHx8MA%3D%3D");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }}
-    
-    .centered-title {{
-            text-align: center;
-            font-size: 30px;
-            font-weight: bold;
-            color: #333;
-    }}
-    .gap {{
-            margin-top: 40px; /* Adjust the gap size as needed */
-    }}
-    .centered-button {{
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-    }}
+    body {
+        background-color: violet !important;
+    }
+    .stApp {
+        background-color: violet !important;
+    }
+    .block-container {
+        background-color: violet !important;
+    }
+    /* Change background color for sidebar */
+    section[data-testid="stSidebar"] {
+        background-color: violet !important;
+    }
+    div.stButton > button {
+        display: block;
+        margin: auto;
+        background-color: darkblue;
+        color: white;
+        font-size: 16px;
+        padding: 10px 24px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+    }
     </style>
-    """, unsafe_allow_html=True)
-st.markdown('<div class="centered-title">CUSTOMER SATISFACTION PREDICTION APP</div>', unsafe_allow_html=True)
-st.markdown('<div class="gap"></div>', unsafe_allow_html=True)
-st.sidebar.header("**INPUT FEATURES**")
-st.markdown('<div class="gap"></div>', unsafe_allow_html=True)
-# Function to get user input
+    """,
+    unsafe_allow_html=True
+)
+
+
+# Streamlit app title
+st.markdown(
+    "<h1 style='text-align: center; color: darkblue;'>PASSENGER SATISFACTION PREDICTION</h1>",
+    unsafe_allow_html=True
+)
+
+
+
+st.sidebar.header("RATINGS")
+
+# Function to get user input and encode categorical features
+def star_rating(label):
+    """Function to display star ratings and return numerical values."""
+    stars = st.sidebar.radio(label, ["⭐", "⭐⭐", "⭐⭐⭐", "⭐⭐⭐⭐", "⭐⭐⭐⭐⭐"], index=2)
+    star_mapping = {"⭐": 1, "⭐⭐": 2, "⭐⭐⭐": 3, "⭐⭐⭐⭐": 4, "⭐⭐⭐⭐⭐": 5}
+    return star_mapping[stars]
+
 def user_input_features():
-    # Numeric sliders
-    age = st.sidebar.slider("**Age**", 0, 100, 30)
-    flight_distance = st.sidebar.slider("**Flight Distance (in km)**", 0, 5000, 1000)
-    departure_delay = st.sidebar.slider("**Departure Delay (in minutes)**", 0, 300, 0)
-    arrival_delay = st.sidebar.slider("**Arrival Delay (in minutes)**", 0, 300, 0)
+    # Numeric inputs
+    age = st.slider("**Age**", 0, 100, 30)
+    flight_distance = st.sidebar.slider("Flight Distance (in km)", 0, 5000, 1000)
+    departure_delay = st.sidebar.slider("Departure Delay (min)", 0, 300, 0)
+    arrival_delay = st.sidebar.slider("Arrival Delay (min)", 0, 300, 0)
 
-    # Service ratings (0-5)
-    inflight_wifi = st.sidebar.selectbox("**Inflight Wifi Service**", [0, 1, 2, 3, 4, 5])
-    time_convenient = st.sidebar.selectbox("**Departure/Arrival Time Convenient**", [0, 1, 2, 3, 4, 5])
-    online_booking = st.sidebar.selectbox("**Ease of Online Booking**", [0, 1, 2, 3, 4, 5])
-    gate_location = st.sidebar.selectbox("**Gate Location**", [0, 1, 2, 3, 4, 5])
-    food_and_drink = st.sidebar.selectbox("**Food and Drink**", [0, 1, 2, 3, 4, 5])
-    online_boarding = st.sidebar.selectbox("**Online Boarding**", [0, 1, 2, 3, 4, 5])
-    seat_comfort = st.sidebar.selectbox("**Seat Comfort**", [0, 1, 2, 3, 4, 5])
-    inflight_entertainment = st.sidebar.selectbox("**Inflight Entertainment**", [0, 1, 2, 3, 4, 5])
-    onboard_service = st.sidebar.selectbox("**On-board Service**", [0, 1, 2, 3, 4, 5])
-    legroom_service = st.sidebar.selectbox("**Leg Room Service**", [0, 1, 2, 3, 4, 5])
-    baggage_handling = st.sidebar.selectbox("**Baggage Handling**", [0, 1, 2, 3, 4, 5])
-    checkin_service = st.sidebar.selectbox("**Check-in Service**", [0, 1, 2, 3, 4, 5])
-    inflight_service = st.sidebar.selectbox("**Inflight Service**", [0, 1, 2, 3, 4, 5])
-    cleanliness = st.sidebar.selectbox("**Cleanliness**", [0, 1, 2, 3, 4, 5])
+    # Star-based ratings
+    inflight_wifi = star_rating("Inflight Wifi Service")
+    time_convenient = star_rating("Departure/Arrival Time Convenient")
+    online_booking = star_rating("Ease of Online Booking")
+    gate_location = star_rating("Gate Location")
+    food_and_drink = star_rating("Food and Drink")
+    online_boarding = star_rating("Online Boarding")
+    seat_comfort = star_rating("Seat Comfort")
+    inflight_entertainment = star_rating("Inflight Entertainment")
+    onboard_service = star_rating("On-board Service")
+    legroom_service = star_rating("Leg Room Service")
+    baggage_handling = star_rating("Baggage Handling")
+    checkin_service = star_rating("Check-in Service")
+    inflight_service = star_rating("Inflight Service")
+    cleanliness = star_rating("Cleanliness")
 
-    # Categorical (binary encoded)
-    gender = st.sidebar.selectbox("**Gender**", ["Male", "Female"])
-    customer_type = st.sidebar.selectbox("**Customer Type**", ["Disloyal Customer", "Loyal Customer"])
-    type_of_travel = st.sidebar.selectbox("**Type of Travel**", ["Personal Travel", "Business Travel"])
-    travel_class = st.sidebar.selectbox("**Class**", ["Eco", "Eco Plus", "Business"])
-
-    # One-hot encoding for categorical features
+    # Categorical inputs
+    gender = st.selectbox("**Gender**", ["Male", "Female"])
+    customer_type = st.selectbox("**Customer Type**", ["Disloyal Customer", "Loyal Customer"])
+    type_of_travel = st.selectbox("**Type of Travel**", ["Personal Travel", "Business Travel"])
+    travel_class = st.selectbox("**Class**", ["Eco", "Eco Plus", "Business"])
+    st.markdown("<br>", unsafe_allow_html=True)
+    # Create DataFrame
     data = {
         "Age": age,
         "Flight Distance": flight_distance,
@@ -134,106 +142,63 @@ def user_input_features():
         "Checkin service": checkin_service,
         "Inflight service": inflight_service,
         "Cleanliness": cleanliness,
-        "Gender_Male": 1 if gender == "Male" else 0,
-        "Customer Type_disloyal Customer": 1 if customer_type == "Disloyal Customer" else 0,
-        "Type of Travel_Personal Travel": 1 if type_of_travel == "Personal Travel" else 0,
-        "Class_Business": 1 if travel_class == "Business" else 0,
-        "Class_Eco Plus": 1 if travel_class == "Eco Plus" else 0,
-        "Class_Eco": 1 if travel_class == "Eco" else 0,
+        "Gender": gender,
+        "Customer Type": customer_type,
+        "Type of Travel": type_of_travel,
+        "Class": travel_class
     }
 
+    df = pd.DataFrame(data, index=[0])
 
+    # One-hot encoding for categorical features
+    df_encoded = pd.get_dummies(df, columns=["Gender", "Customer Type", "Type of Travel", "Class"])
 
-    return pd.DataFrame(data, index=[0])
+    # Ensure the order of columns matches the expected features
+    df_encoded = df_encoded.reindex(columns=expected_features, fill_value=0)
+
+    return df_encoded
 
 # Collect user input
 input_df = user_input_features()
+st.markdown("<br>", unsafe_allow_html=True)
 
-# Reindex input DataFrame to match expected features
-input_df = input_df.reindex(columns=expected_features, fill_value=0)
+# Prediction button
+if st.button("**PREDICT SATISFACTION**"):
+    if model:
+        prediction = model.predict(input_df)
+        prediction_proba = model.predict_proba(input_df)
 
-# Display user input
-st.subheader("User Input Features")
-st.write(input_df)
-st.markdown('<div class="gap"></div>', unsafe_allow_html=True)
+        result = "Satisfied" if prediction[0] == 1 else "Neutral or Dissatisfied"
+        st.subheader("PREDICTION RESULT")
+        st.write(f"Customer Satisfaction Level: **{result}**")
 
-page = st.radio("**SELECT PAGE**", ["Customer Satisfaction Prediction", "Customer Satisfaction Trends"])
-st.markdown('<div class="gap"></div>', unsafe_allow_html=True)
+        st.subheader("PREDICTION PROBABILITY")
+        st.write(f"**Satisfied**: {prediction_proba[0][1]:.2f}")
+        st.write(f"**Neutral or Dissatisfied**: {prediction_proba[0][0]: .2f}")
 
-if page == "Customer Satisfaction Prediction":
-    # Display the "Predict Satisfaction" button only on this page
-    with st.container():
-        st.markdown('<div class="centered-button">', unsafe_allow_html=True)
-        if st.button("Predict Satisfaction", key="predict_button"):
-            prediction = model.predict(input_df)
-            prediction_proba = model.predict_proba(input_df)
-
-            result = "Satisfied" if prediction[0] == 1 else "Neutral or Dissatisfied"
-            st.subheader("Prediction Result")
-            st.write(f"Customer Satisfaction Level: **{result}**")
-
-            st.subheader("Prediction Probability")
-            st.write(f"Satisfied: {prediction_proba[0][1]:.2f}, Neutral or Dissatisfied: {prediction_proba[0][0]:.2f}")
-
-            st.subheader("CUSTOMER SATISFACTION DEMOGRAPHIC")
-            categories = ["Satisfied", "Neutral or Dissatisfied"]
-            probabilities = prediction_proba[0]
-
-            # Pie chart
-            fig, ax = plt.subplots()
-            ax.pie(probabilities, labels=categories, autopct='%1.1f%%', startangle=90, colors=["pink", "blue"])
-            ax.axis("equal")
-            st.pyplot(fig)
-
-        st.markdown('</div>', unsafe_allow_html=True)
-
-elif page == "Customer Satisfaction Trends":
-    # Function to display trends
-    def display_trends():
-        st.subheader("CUSTOMER SATISFACTION TRENDS")
-
-        # Example dataset (replace with real dataset if available)
-        sample_data = pd.DataFrame({
+        # Update bar chart based on prediction
+        satisfaction_trends = pd.DataFrame({
             "Category": ["Satisfied", "Neutral/Dissatisfied"],
-            "Proportion": [0.65, 0.35],
+            "Percentage": [prediction_proba[0][1] * 100, prediction_proba[0][0] * 100],
         })
 
-        # Example satisfaction by class
-        class_data = pd.DataFrame({
-            "Class": ["Eco", "Eco Plus", "Business"],
-            "Satisfied": [70, 80, 95],
-            "Neutral/Dissatisfied": [30, 20, 5],
-        })
-
-        st.write("**CUSTOMER SATISFACTION BY CLASS**")
-        class_data.set_index("Class")[["Satisfied", "Neutral/Dissatisfied"]].plot(kind="bar", stacked=True, color=["violet", "yellow"], figsize=(10, 4))
-        plt.title("Satisfaction Levels by Class")
-        plt.ylabel("Percentage")
-        plt.xlabel("Class")
-        plt.legend(
-            title="Satisfaction Level",
-            bbox_to_anchor=(1, 1),  # Position at top-right
-            loc='upper left'  # Align the legend at the top-left of the legend box
+        chart = (
+            alt.Chart(satisfaction_trends)
+            .mark_bar()
+            .encode(
+                x=alt.X("Category", sort=None, title="Satisfaction Level"),
+                y=alt.Y("Percentage", title="Probability (%)"),
+                color=alt.Color("Category",
+                                scale=alt.Scale(domain=["Satisfied", "Neutral/Dissatisfied"], range=["blue", "pink"])),
+                tooltip=["Category", "Percentage"]
+            )
+            .properties(width=500, height=300)
         )
-        st.pyplot(plt)
 
-        # Example satisfaction by type of travel
-        travel_data = pd.DataFrame({
-            "Type of Travel": ["Business Travel", "Personal Travel"],
-            "Satisfied": [90, 60],
-            "Neutral/Dissatisfied": [10, 40],
-        })
+        st.subheader("CUSTOMER SATISFACTION TRENDS")
+        st.altair_chart(chart, use_container_width=True)
 
-        st.write("**CUSTOMER SATISFACTION BY TYPE OF TRAVEL**")
-        travel_data.set_index("Type of Travel")[["Satisfied", "Neutral/Dissatisfied"]].plot(kind="bar", stacked=True, color=["violet", "yellow"], figsize=(10, 4))
-        plt.title("Satisfaction Levels by Type of Travel")
-        plt.ylabel("Percentage")
-        plt.xlabel("Type of Travel")
-        plt.legend(
-            title="Satisfaction Level",
-            bbox_to_anchor=(1, 1),  # Position at top-right
-            loc='upper left'  # Align the legend at the top-left of the legend box
-        )
-        st.pyplot(plt)
+    else:
+        st.error("Model not loaded properly. Check the model file.")
 
-    display_trends()
+
